@@ -2,13 +2,13 @@
 
 Reproduction materials for **Joint Client Sampling with Reusable Synthetic Data for Non-IID Federated Learning**, by Di Wu.
 
-**Source release published:** [v1.0.0](https://github.com/wudi2071458152/PJCS-FL/releases/tag/v1.0.0). This repository is public. The initialization attachment and checksum file are available and match the prepared SHA256 values; the CIFAR-10 and Fashion-MNIST data attachments are still missing from the release and must be uploaded before the full download workflow is available. All data files have already been accepted and packaged locally. See [download status](docs/downloads.md).
+**Released:** [v1.0.0](https://github.com/wudi2071458152/PJCS-FL/releases/tag/v1.0.0). Source code, the CIFAR-10 and Fashion-MNIST proxy data, the initialization supplement and `SHA256SUMS` are public. All four attachment names, sizes and GitHub-reported SHA256 values match the prepared files. See [downloads and installation](docs/downloads.md).
 
 The primary experiment uses real and proxy local learning rates of **0.01**, synthetic data optimized for **32,000 iterations**, two datasets (CIFAR-10 and Fashion-MNIST), five Dirichlet configurations, and five federated training seeds. Learning-rate-0.1 experiments are sensitivity results and must remain separate.
 
 The recorded experiment specification is [configs/paper_lr001.json](configs/paper_lr001.json). Its ten methods are FedAvg, Power-of-Choice, Practical IS-HT, Practical DELTA-HT, DivFL, static equal-weight Gram HCSFed, uniform HT, proxy-score HT, proxy-score plus clustering K=3, and PJCS (eta=1). The unrelated wireless study is outside this release.
 
-Pre-generated 32k proxy datasets are distributed as separate release attachments with checksums once their uploads are complete. Raw benchmark datasets are obtained from their original sources. Training checkpoints, machine-specific deployment archives, and private working notes are excluded from source commits.
+Pre-generated 32k proxy datasets are distributed as separate release attachments with checksums. Raw benchmark datasets are obtained from their original sources. Training checkpoints, machine-specific deployment archives, and private working notes are excluded from source commits.
 
 ## Source snapshot and checks
 
@@ -29,7 +29,11 @@ The first command checks frozen source bytes and inventory coverage; it does not
 
 [The proxy inventory](assets/proxy_manifest.json) records expected hashes from the formal LR=0.01 PJCS protocols. All 320 snapshots and 54 support files have now passed local acceptance; the combined dataset contains 110,000 synthetic images. See [the acceptance record](docs/data_acceptance.md), [the inventory guide](docs/proxy_inventory.md), and [the export instructions](docs/export_proxy_assets.md). Raw benchmark data are separate.
 
-The export tools default to in-memory/read-only output preflight. Only `--export` writes an archive; neither tool starts synthesis or FL training. The eight supplemental initial states for seeds 2027/2028/2029/2030 have also passed [acceptance](docs/initialization_acceptance.md). Their formal tensor fingerprints are fixed in [the initialization manifest](assets/initialization_manifest.json); initializers from a different environment must not silently replace them. [The download guide](docs/downloads.md) describes the three prepared attachments and checksum-verified installation; URLs remain planned until publication.
+The export tools default to in-memory/read-only output preflight. Only `--export` writes an archive; neither tool starts synthesis or FL training. The eight supplemental initial states for seeds 2027/2028/2029/2030 have also passed [acceptance](docs/initialization_acceptance.md). Their formal tensor fingerprints are fixed in [the initialization manifest](assets/initialization_manifest.json); initializers from a different environment must not silently replace them. [The download guide](docs/downloads.md) provides the three published attachments and checksum-verified installation:
+
+```bash
+python -B tools/get_assets.py --download --install
+```
 
 ## Run and report
 
@@ -45,8 +49,8 @@ See [the release preparation record](docs/release_preparation.md) for the eviden
 
 ## Citation and license
 
-Author: **Di Wu**. Software citation metadata is in [CITATION.cff](CITATION.cff). No DOI or publication status is assumed in this draft.
+Author: **Di Wu**. Software citation metadata is in [CITATION.cff](CITATION.cff). The software release does not imply a manuscript DOI or journal publication status.
 
-Original contributions are intended to be released under the [MIT license](LICENSE). Third-party material retains its own notices and license conditions; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The manuscript's publication license does not determine the software or dataset license.
+Original software contributions are released under the [MIT license](LICENSE). Third-party material retains its own notices and license conditions; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The manuscript's publication license does not determine the software or dataset license.
 
 The author's synthetic-data and initial-model asset contributions use [CC BY 4.0](DATA_LICENSE.txt); original benchmark rights and attribution remain with their sources. Raw benchmarks are downloaded separately, not redistributed in the PJCS attachments.

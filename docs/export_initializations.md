@@ -1,5 +1,7 @@
 # Recover the remaining initial model states
 
+This author-side recovery step is complete. All eight supplemental states are accepted and published; ordinary users should follow [downloads.md](downloads.md) rather than regenerate them on the original server.
+
 The proxy recovery bundle contains the original seed2025 initial models for all ten dataset/configuration groups. The other four FL seeds originally generated their initial models in the server environment. A prior audit found that local Windows/PyTorch 2.7 generation differs from the recorded Linux/PyTorch 2.14 states, even with the same seed. Do not substitute those different weights for the paper initialization.
 
 `assets/initialization_manifest.json` records the tensor-content fingerprints from the formal five-seed protocols. The initializer exporter uses the unchanged retained `dirichlet_screen_common.model(seed)` and `fmnist_common.model(seed)` functions, and checks the unchanged `run_dirichlet_multiseed.state_sha256` fingerprint before exporting anything. The recorded environment is Python 3.11.16 and PyTorch 2.14.0+cu130. Using the same compatible environment is still subject to the fingerprint checks.

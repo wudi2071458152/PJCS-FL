@@ -1,5 +1,7 @@
 # Recover missing 32k proxy assets
 
+This author-side recovery step is complete. Ordinary users can download the accepted public attachments using [downloads.md](downloads.md); they do not need access to the original experiment server.
+
 The public release needs 320 client snapshots. The 96 CIFAR-10 snapshots for alpha=0.1/0.2/0.3 are already available locally and were matched to the formal PJCS input fingerprints. Export only the missing 224 from the server: CIFAR-10 alpha=0.05/0.07 (64) and all five Fashion-MNIST configurations (160).
 
 Transfer `tools/export_proxy_assets.py` and `assets/proxy_manifest.json` together to the server, preserving their relative locations. The script requires Python 3.9 or later, uses only its standard library, and does not load models, modify experiment inputs, download data, synthesize images, or start training.

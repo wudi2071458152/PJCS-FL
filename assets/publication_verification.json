@@ -7,24 +7,37 @@
   "draft": false,
   "immutable": false,
   "tag_commit": "2c067e8a4d2c4a5841600fc172e4f34cd4e296e5",
-  "verification": "GitHub release metadata and server-reported SHA256; no redundant full binary download.",
+  "verification": "GitHub uploaded-asset metadata, exact public URL matching and server-reported SHA256 compared to prepared files; no redundant full binary redownload.",
   "available_assets": [
+    {
+      "name": "pjcs_cifar10_32k_v1.tar.gz",
+      "bytes": 572572526,
+      "sha256": "93711c0da5d2393faee56961324dd3d7022c402772c607558e7f2fe3b744d684",
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_cifar10_32k_v1.tar.gz",
+      "matches_prepared_file": true
+    },
+    {
+      "name": "pjcs_fmnist_32k_v1.tar.gz",
+      "bytes": 172339728,
+      "sha256": "200cdf82d1f415bbe6e33aa81ad41247dd3645f52aff4900acd623ea179d70f5",
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_fmnist_32k_v1.tar.gz",
+      "matches_prepared_file": true
+    },
     {
       "name": "pjcs_initializations_v1.tar.gz",
       "bytes": 9358485,
       "sha256": "7cf2afd743a9a717971dab4093ae088f565354f8eb8d29fbf53b3a4c6a83de25",
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_initializations_v1.tar.gz",
       "matches_prepared_file": true
     },
     {
       "name": "SHA256SUMS",
       "bytes": 282,
       "sha256": "12a45e35f24a9edd0e68ce40c94d77da74ff512e93192a34cca25c5825507e06",
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/SHA256SUMS",
       "matches_prepared_file": true
     }
   ],
-  "missing_assets": [
-    "pjcs_cifar10_32k_v1.tar.gz",
-    "pjcs_fmnist_32k_v1.tar.gz"
-  ],
-  "complete_download_set": false
+  "missing_assets": [],
+  "complete_download_set": true
 }

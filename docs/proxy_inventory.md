@@ -1,6 +1,6 @@
 # Proxy asset inventory
 
-This inventory describes the final **32,000-iteration**, old-loss proxy inputs for the primary LR=0.01 experiment. It contains expected SHA256 checksums from the recorded **seed2025 PJCS protocols**, not newly generated proxy data. The five federated seeds reuse these same partitions and proxy images.
+This inventory describes the final **32,000-iteration**, old-loss proxy inputs for the primary LR=0.01 experiment. It contains expected SHA256 checksums from the recorded **seed2025 PJCS protocols**, not newly generated proxy data. The five federated seeds reuse these same partitions and proxy images. All recovery and acceptance steps below are complete; ordinary users should obtain the published attachments through [downloads.md](downloads.md). The table records the author's original recovery plan.
 
 | Dataset | Dirichlet alpha | Final snapshots | Already available locally | To export |
 | --- | --- | ---: | ---: | ---: |
