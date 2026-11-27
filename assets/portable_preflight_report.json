@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-27",
+  "scope": "One read-only real-input preflight per dataset; no local SGD or formal training",
+  "environment": {
+    "platform": "Windows",
+    "python": "3.9.23",
+    "torch": "2.7.1+cu118",
+    "device": "CPU (CUDA_VISIBLE_DEVICES=-1)"
+  },
+  "checks": [
+    {
+      "dataset": "cifar10",
+      "alpha": "0p05",
+      "seed": 2025,
+      "route": "representative_real_eta1p0",
+      "clients": 32,
+      "real_samples": 50000,
+      "proxy_samples": 10000,
+      "model_parameters": 320010,
+      "initialization_state_sha256": "60c0dff657b61233458b7481e6c41c9715ec8aec8f71877681c19ad5b18ce60e",
+      "formal_training_started": false,
+      "output_created": false,
+      "status": "passed"
+    },
+    {
+      "dataset": "fmnist",
+      "alpha": "0p05",
+      "seed": 2025,
+      "route": "representative_real_eta1p0",
+      "clients": 32,
+      "real_samples": 60000,
+      "proxy_samples": 12000,
+      "model_parameters": 317706,
+      "initialization_state_sha256": "53c918842cd672250b7335f11a68afc37b34fb51d60132217bb0bc57a68e5a95",
+      "formal_training_started": false,
+      "output_created": false,
+      "status": "passed"
+    }
+  ],
+  "fixture_tests": {
+    "count": 6,
+    "status": "passed",
+    "coverage": [
+      "exact partition coverage and output/input separation",
+      "default preflight neither trains nor creates output",
+      "hash rejection and foreign output preservation",
+      "saved theta0 loading and wrong new-seed initialization refusal",
+      "ten-route selection, inclusion probability and update parity against retained kernels",
+      "retained checkpoint loop resumes the same two-round mocked-update CPU fixture"
+    ]
+  },
+  "limitations": "Fixture updates are synthetic and are not benchmark training. These checks do not reproduce five-seed accuracy results or validate initialization regeneration across other environments."
+}

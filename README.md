@@ -2,7 +2,7 @@
 
 Reproduction materials for **Joint Client Sampling with Reusable Synthetic Data for Non-IID Federated Learning**, by Di Wu.
 
-**Preparation in progress.** This private preparation snapshot contains the retained numerical sources, source and input inventories, licenses, and a verified server export tool. The end-to-end portable training entry point and downloadable data assets are not yet complete. Repository: <https://github.com/wudi2071458152/PJCS-FL>.
+**Preparation in progress.** This private snapshot contains retained numerical sources, a portable FL input binding, a configurable matrix scheduler, recorded result tables, and data verification/export tools. The proxy data have been accepted locally; public download assets and the supplemental initialization bundle are not yet published. Repository: <https://github.com/wudi2071458152/PJCS-FL>.
 
 The primary experiment uses real and proxy local learning rates of **0.01**, synthetic data optimized for **32,000 iterations**, two datasets (CIFAR-10 and Fashion-MNIST), five Dirichlet configurations, and five federated training seeds. Learning-rate-0.1 experiments are sensitivity results and must remain separate.
 
@@ -12,7 +12,7 @@ Pre-generated 32k proxy datasets will be distributed as separate download assets
 
 ## Source snapshot and checks
 
-`legacy/` retains 51 Python files and four JSON files without numerical edits. [The source manifest](assets/source_manifest.json) records exact SHA256 fingerprints and source paths. [The source guide](docs/frozen_source.md) explains the entry points and passive historical dependencies. These retained workers still enforce their historical input bindings; copying the source alone is insufficient for an end-to-end run.
+`legacy/` retains 51 Python files and four JSON files without numerical edits. [The source manifest](assets/source_manifest.json) records exact SHA256 fingerprints and source paths. [The source guide](docs/frozen_source.md) explains the entry points and passive historical dependencies. `run_fl.py` adds portable input binding while reusing the retained numerical kernels and checkpoint loop; historical output protocols remain separate.
 
 `requirements.txt` lists the direct dependencies. `requirements-historical.txt` records the observed paper environment rather than claiming a complete environment lockfile. The preparation tools use only the Python standard library (Python 3.9 or later).
 
@@ -23,19 +23,25 @@ python -B tools/verify_release.py
 python -B -m unittest discover -s tests -p "test_*.py"
 ```
 
-The first command checks frozen source bytes and inventory coverage; it does not imply that absent proxy tensors have been validated. Tests use small generated file fixtures and do not run formal training. The numerical snapshot was also checked for Python compilation, JSON parsing and four FL CLI help invocations.
+The first command checks frozen source bytes and inventory coverage; it does not inspect absent tensor files unless an artifact root is supplied. Tests use small generated file or CPU fixtures and do not run formal training. The numerical snapshot was also checked for Python compilation, JSON parsing and four FL CLI help invocations.
 
 ## Proxy data recovery
 
-[The proxy inventory](assets/proxy_manifest.json) records expected hashes from the formal LR=0.01 PJCS protocols. There are 320 snapshots: 96 CIFAR-10 snapshots are already available locally; 224 snapshots and 54 required support files must be recovered from the server. See [the inventory guide](docs/proxy_inventory.md) and [the export instructions](docs/export_proxy_assets.md). Raw benchmark data are not part of that export.
+[The proxy inventory](assets/proxy_manifest.json) records expected hashes from the formal LR=0.01 PJCS protocols. All 320 snapshots and 54 support files have now passed local acceptance; the combined dataset contains 110,000 synthetic images. See [the acceptance record](docs/data_acceptance.md), [the inventory guide](docs/proxy_inventory.md), and [the export instructions](docs/export_proxy_assets.md). Raw benchmark data are separate.
 
-The export tool defaults to read-only verification. Only `--export` writes an archive; the tool never starts synthesis or FL training. Public dataset download links will be added after asset acceptance.
+The export tools default to in-memory/read-only output preflight. Only `--export` writes an archive; neither tool starts synthesis or FL training. [The initialization guide](docs/export_initializations.md) explains the remaining eight initial states for seeds 2027/2028/2029/2030. Their formal tensor fingerprints are fixed in [the initialization manifest](assets/initialization_manifest.json); initializers from a different environment must not silently replace them. Public dataset download links will be added after final packaging.
+
+## Run and report
+
+See [the reproduction workflow](docs/reproduce.md) and [single-run guide](docs/portable_fl.md). Both `run_fl.py` and `tools/schedule_fl.py` default to preparation/plan mode; training requires `--run`. The default matrix is 500 runs, with the 100 seed2025 runs prioritized before the other seeds. No formal training was started while preparing this repository.
+
+[The recorded table](results/table.md) and [five-seed values](results/lr001_tail300.json) summarize the already audited LR=0.01 experiments. Run `python -B tools/report_results.py` to regenerate the table from those records. Stars identify the highest unrounded mean within each dataset/alpha column and do not denote statistical significance.
 
 ## Synthesis lineage
 
 For each data partition, two shared FedAvg reference trajectories are generated with seeds 2025 and 2026. Each client optimizes its own synthetic dataset using local real data, evaluated at model states sampled from these reference trajectories. This description follows the recorded input protocols; it does not describe independently trained reference trajectories for each client.
 
-See [the release preparation record](docs/release_preparation.md) for the evidence and remaining work. The manuscript itself has not been modified. Training quick-start commands will be added after the portable input binding and returned data assets have been checked.
+See [the release preparation record](docs/release_preparation.md) for the evidence and remaining work. The manuscript itself has not been modified. The retained synthesis source is available; a complete portable from-scratch synthesis scheduler is outside the accepted quick-FL binding described here.
 
 ## Citation and license
 

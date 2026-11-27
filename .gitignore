@@ -16,6 +16,7 @@ proxies/
 outputs/
 checkpoints/
 archive/
+artifacts/
 *.pt
 *.pth
 *.ckpt

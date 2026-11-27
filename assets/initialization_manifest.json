@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "date": "2026-11-27",
+  "fingerprint_algorithm": "run_dirichlet_multiseed.state_fingerprint(state_dict)",
+  "fingerprint_role": "Tensor-content SHA256, not torch.save file SHA256; preserve named-tensor ordering, dtype, shape and bytes.",
+  "scope": "Both datasets and five federated seeds; shared within a dataset across alpha and method. Seed2025 must use accepted historical initial_model.pt artifacts.",
+  "recorded_software": {
+    "python": "3.11.16",
+    "torch": "2.14.0+cu130"
+  },
+  "generation_note": "Generating the same seed on another platform or PyTorch version may produce a different tensor state. Compare this expected fingerprint and stop on mismatch; never replace the expected value. Use accepted model assets or generate matching states in the recorded compatible environment.",
+  "datasets": {
+    "cifar10": {
+      "2025": "60c0dff657b61233458b7481e6c41c9715ec8aec8f71877681c19ad5b18ce60e",
+      "2027": "0dda9c01766756c4cfdb497049342da9ec3c88c25fed6ce7e460ab932db14aae",
+      "2028": "83c36f3728f63ede12cc5fdb73410f1fbb7f3a6c9ab9037c3da0908068f97763",
+      "2029": "eefaa778d2499b5c4e170512218d6647a31979d31cefd5a2f840c1346c50d49a",
+      "2030": "bb55f18a5db8c5d3dba3088c49181176fa3c2947d63cb46bd14be0b8b0c4e9b0"
+    },
+    "fmnist": {
+      "2025": "53c918842cd672250b7335f11a68afc37b34fb51d60132217bb0bc57a68e5a95",
+      "2027": "99d32a29b1f008d54602e76dbd53cd6a64abad32666f0a7c946183cc388c0ab4",
+      "2028": "02d893fd6ccf09649dd358d97197a5589500ddb382e19d00844de6a30acd3863",
+      "2029": "85b207102564f8c0a7b39baa5419efe419a00a0437b726730fcfa8649b926210",
+      "2030": "93ab423882b80d93256bb0f9441eed9df1bce6a470acba4d91eb5de92b746efb"
+    }
+  },
+  "provenance": [
+    {
+      "dataset": "cifar10",
+      "seed": 2025,
+      "path": "inputs/dirichlet_baseline191_20261015/reused/seed2025/0p05/representative_real_eta1p0/protocol.json",
+      "sha256": "f33e2fb744eca34b5a6ed7d0cf80b903eccac6b5968ec06aca0072392458b3e3"
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2027,
+      "path": "inputs/dirichlet_baseline191_20261015/reused/seed2027/0p05/representative_real_eta1p0/protocol.json",
+      "sha256": "52f80525f8fd60b4093038a96d6bb56761065fe8069b6b537578394f0e40226f"
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2028,
+      "path": "inputs/dirichlet_baseline191_20261015/reused/seed2028/0p05/representative_real_eta1p0/protocol.json",
+      "sha256": "cd501bd6db3416a3580fba92eb52537daa055b0a9f788bc82d6294e6fa472232"
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2029,
+      "path": "inputs/dirichlet_baseline191_20261015/reused/seed2029/0p05/representative_real_eta1p0/protocol.json",
+      "sha256": "f0e6daacaf1a3c22116ef6dccc7889efc28923ede47151d4a1136d9a80a8475a"
+    },
+    {
+      "dataset": "cifar10",
+      "seed": 2030,
+      "path": "inputs/dirichlet_baseline191_20261015/reused/seed2030/0p05/representative_real_eta1p0/protocol.json",
+      "sha256": "8c4d131964bf71956c63c0e2ff840064125f3f7b1e88e884de69f30f9d3eb2ee"
+    },
+    {
+      "dataset": "fmnist",
+      "seed": 2025,
+      "archive": "received_results/fmnist_continue32000_20261020/final/fmnist_continue32000_final_results.tar.gz",
+      "member": "continue32k/fl/0p05/seed2025/representative_real_eta1p0/protocol.json",
+      "sha256": "a0c70531c1f4aa4a4978a88526f8d98fb8c2b8a58dd59986c1f25d48f3e5713e"
+    },
+    {
+      "dataset": "fmnist",
+      "seed": 2027,
+      "archive": "received_results/fmnist_continue32000_20261020/final/fmnist_continue32000_final_results.tar.gz",
+      "member": "continue32k/fl/0p05/seed2027/representative_real_eta1p0/protocol.json",
+      "sha256": "cd472550fe032b22d914b2ff3d2c7ae0eceb1de173b6aaafcf73ab128c1e8446"
+    },
+    {
+      "dataset": "fmnist",
+      "seed": 2028,
+      "archive": "received_results/fmnist_continue32000_20261020/final/fmnist_continue32000_final_results.tar.gz",
+      "member": "continue32k/fl/0p05/seed2028/representative_real_eta1p0/protocol.json",
+      "sha256": "7a98b447f4573fe6357e980144843db9afecf78e6c35c2c5ec575b488ecc2a8f"
+    },
+    {
+      "dataset": "fmnist",
+      "seed": 2029,
+      "archive": "received_results/fmnist_continue32000_20261020/final/fmnist_continue32000_final_results.tar.gz",
+      "member": "continue32k/fl/0p05/seed2029/representative_real_eta1p0/protocol.json",
+      "sha256": "037db1d3b19f6e1390b646a0d4cfa8f63b6a63c6d3615a3ca4baab4bf703225a"
+    },
+    {
+      "dataset": "fmnist",
+      "seed": 2030,
+      "archive": "received_results/fmnist_continue32000_20261020/final/fmnist_continue32000_final_results.tar.gz",
+      "member": "continue32k/fl/0p05/seed2030/representative_real_eta1p0/protocol.json",
+      "sha256": "29d9352cfb0f5df6043b2fb5b616e91d2ed1d02d15b23cd24ab9d4dd7c77a241"
+    }
+  ]
+}
