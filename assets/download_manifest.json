@@ -1973,5 +1973,15 @@
       ],
       "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_initializations_v1.tar.gz"
     }
+  ],
+  "hosting_status": "partial",
+  "hosting_checked_date": "2026-11-27",
+  "available_assets": [
+    "pjcs_initializations_v1.tar.gz",
+    "SHA256SUMS"
+  ],
+  "missing_assets": [
+    "pjcs_cifar10_32k_v1.tar.gz",
+    "pjcs_fmnist_32k_v1.tar.gz"
   ]
 }

@@ -5,7 +5,7 @@ Updated: 2026-11-27 (Asia/Shanghai). This is a local working record, not a compl
 ## Confirmed scope
 
 - GitHub account: `wudi2071458152` (authenticated login verified on 2026-11-27).
-- Repository: `wudi2071458152/PJCS-FL`; verified private with read/write access. Empty at the initial connection check.
+- Repository: `wudi2071458152/PJCS-FL`; initially private and empty, now verified public with source release `v1.0.0`.
 - Copyright holder: Di Wu.
 - Primary real/proxy local learning rate: 0.01 for both.
 - Synthetic optimization: existing old-loss 32,000-iteration data, not regenerated to accommodate documentation changes.
@@ -87,4 +87,4 @@ Three binary release attachments have been prepared and checked, with their hash
 
 The scheduler now verifies and creates compact JSON-only result archives plus SHA256 after seed2025 and after the complete matrix; only then is the corresponding phase considered complete. A portable from-scratch synthesis scheduler remains a separate item; this release's documented executable workflow is FL from accepted pre-generated proxies. Public hosting still needs to be completed. No full synthesis or FL rerun is needed for file recovery.
 
-The connected repository remains private. No formal training has been started and no historical code, protocol, checkpoint, manuscript, or result has been altered.
+Publication check on 2026-11-27: the repository is public and `v1.0.0` points to the prepared commit `2c067e8a4d2c4a5841600fc172e4f34cd4e296e5`. The initialization attachment and `SHA256SUMS` are uploaded and their GitHub-reported SHA256 values match the prepared files. The CIFAR-10 and Fashion-MNIST data attachments are missing from the current release. Complete binary hosting remains pending those two uploads; no tag movement is needed. No formal training has been started and no historical code, protocol, checkpoint, manuscript, or result has been altered.

@@ -2,19 +2,19 @@
 
 Reproduction materials for **Joint Client Sampling with Reusable Synthetic Data for Non-IID Federated Learning**, by Di Wu.
 
-**Release preparation complete; public hosting pending.** This snapshot contains retained numerical sources, a portable FL input binding, a configurable matrix scheduler, recorded result tables, and data verification/export tools. Proxy data and all five-seed initialization states have been accepted and packaged. The three binary attachments are not yet published. Repository: <https://github.com/wudi2071458152/PJCS-FL>.
+**Source release published:** [v1.0.0](https://github.com/wudi2071458152/PJCS-FL/releases/tag/v1.0.0). This repository is public. The initialization attachment and checksum file are available and match the prepared SHA256 values; the CIFAR-10 and Fashion-MNIST data attachments are still missing from the release and must be uploaded before the full download workflow is available. All data files have already been accepted and packaged locally. See [download status](docs/downloads.md).
 
 The primary experiment uses real and proxy local learning rates of **0.01**, synthetic data optimized for **32,000 iterations**, two datasets (CIFAR-10 and Fashion-MNIST), five Dirichlet configurations, and five federated training seeds. Learning-rate-0.1 experiments are sensitivity results and must remain separate.
 
 The recorded experiment specification is [configs/paper_lr001.json](configs/paper_lr001.json). Its ten methods are FedAvg, Power-of-Choice, Practical IS-HT, Practical DELTA-HT, DivFL, static equal-weight Gram HCSFed, uniform HT, proxy-score HT, proxy-score plus clustering K=3, and PJCS (eta=1). The unrelated wireless study is outside this release.
 
-Pre-generated 32k proxy datasets will be distributed as separate download assets with checksums. Raw benchmark datasets will be obtained from their original sources. Training checkpoints, machine-specific deployment archives, and private working notes will not be committed to the repository.
+Pre-generated 32k proxy datasets are distributed as separate release attachments with checksums once their uploads are complete. Raw benchmark datasets are obtained from their original sources. Training checkpoints, machine-specific deployment archives, and private working notes are excluded from source commits.
 
 ## Source snapshot and checks
 
 `legacy/` retains 51 Python files and four JSON files without numerical edits. [The source manifest](assets/source_manifest.json) records exact SHA256 fingerprints and source paths. [The source guide](docs/frozen_source.md) explains the entry points and passive historical dependencies. `run_fl.py` adds portable input binding while reusing the retained numerical kernels and checkpoint loop; historical output protocols remain separate.
 
-`requirements.txt` lists the direct dependencies. `requirements-historical.txt` records the observed paper environment rather than claiming a complete environment lockfile. The preparation tools use only the Python standard library (Python 3.9 or later).
+`requirements.txt` lists the direct dependencies. `requirements-historical.txt` records the observed paper environment rather than claiming a complete environment lockfile. Downloading and file-only packaging/verification use the Python standard library (Python 3.9 or later); FL and initialization generation/acceptance require PyTorch and the retained implementation's dependencies.
 
 From this repository root:
 

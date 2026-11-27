@@ -1,6 +1,6 @@
 # Data attachments
 
-Release tag: `v1.0.0`. **The files below are prepared locally; their public GitHub hosting has not yet been verified.** The authoritative file sizes, SHA256 checksums, member inventories and planned URLs are in `assets/download_manifest.json`. Its `published` field remains false until the release is actually available.
+Release tag: [`v1.0.0`](https://github.com/wudi2071458152/PJCS-FL/releases/tag/v1.0.0). The repository and release are public. **As checked on 2026-11-27, only the initialization attachment and `SHA256SUMS` are present; the two dataset attachments still need to be uploaded.** Their prepared file sizes, SHA256 checksums, member inventories and expected URLs are in `assets/download_manifest.json`. Its `published` field remains false until the complete attachment set is available.
 
 | Attachment | Size (decimal MB) | Contents |
 | --- | ---: | --- |
@@ -10,7 +10,7 @@ Release tag: `v1.0.0`. **The files below are prepared locally; their public GitH
 
 Obtain the dataset of interest and the initialization attachment. For both datasets, obtain all three attachments. Raw CIFAR-10 and Fashion-MNIST data are separate downloads from the original sources. The generated data/initialization contributions use CC BY 4.0 as described in `DATA_LICENSE.txt`, including preserved upstream notices.
 
-Inspect the planned files without writing or downloading anything:
+Inspect the expected files without writing or downloading anything:
 
 ```bash
 python -B tools/get_assets.py
