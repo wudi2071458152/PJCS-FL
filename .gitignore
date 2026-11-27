@@ -15,6 +15,7 @@ datasets/
 proxies/
 outputs/
 checkpoints/
+archive/
 *.pt
 *.pth
 *.ckpt

@@ -1,0 +1,9 @@
+# Recorded reference environment, not a complete dependency lockfile.
+# Python: 3.11.16. CUDA build: 13.0.
+# Install a compatible torch/torchvision pair from the intended PyTorch index.
+# The recorded local torch build requires an index that provides +cu130 wheels.
+# NumPy, torchvision and scikit-learn versions were not captured here; no
+# unobserved exact versions are supplied.
+-r requirements.txt
+torch==2.14.0+cu130
+scipy==1.17.1

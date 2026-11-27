@@ -1,0 +1,22 @@
+{
+  "dataset_names": ["cifar10", "fmnist"],
+  "alphas": ["0p05", "0p07", "0p1", "0p2", "0p3"],
+  "fl_seeds": [2025, 2027, 2028, 2029, 2030],
+  "clients": 32,
+  "selected": 3,
+  "rounds": 1500,
+  "local_steps": 3,
+  "batch_size_max": 256,
+  "real_lr": 0.01,
+  "proxy_lr": 0.01,
+  "synthesis_iterations": 32000,
+  "real_ce": "ordinary",
+  "proxy_ce": "mean(M*n_c/(n*m_c) * per-image CE), no batch renormalization",
+  "fl_augmentation": false,
+  "pjcs_eta": 1.0,
+  "routes": [
+    "fedavg", "poc", "is_ht", "delta_ht", "divfl", "hcs_static_gram_equal",
+    "uniform_real", "score_real", "cluster_score_real_k3", "representative_real_eta1p0"
+  ],
+  "configuration_role": "Recorded paper specification; historical worker entry points retain their own validated protocols."
+}

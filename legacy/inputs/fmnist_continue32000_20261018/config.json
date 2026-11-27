@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "suite": "fmnist_continue32000_20261018",
+  "dataset": "FashionMNIST",
+  "alphas": [
+    "0p05",
+    "0p07",
+    "0p1",
+    "0p2",
+    "0p3"
+  ],
+  "partition_seed": 35,
+  "clients": 32,
+  "selected": 3,
+  "budget_ratio": 0.2,
+  "budget_total": 12000,
+  "reference_seeds": [
+    2025,
+    2026
+  ],
+  "fl_seeds": [
+    2025,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "synthesis_iterations": 32000,
+  "snapshot_iterations": [
+    0,
+    8000,
+    16000,
+    24000,
+    32000
+  ],
+  "fl_rounds": 1500,
+  "local_steps": 3,
+  "batch": 256,
+  "real_lr": 0.01,
+  "proxy_lr": 0.01,
+  "routes": [
+    "fedavg",
+    "uniform_real",
+    "score_real",
+    "cluster_score_real_k2",
+    "cluster_score_real_k3",
+    "cluster_score_real_k4",
+    "representative_real_eta1p0",
+    "poc",
+    "is_ht",
+    "delta_ht",
+    "divfl",
+    "hcs_static_gram_equal",
+    "fedvarp",
+    "residual_uniform",
+    "residual_score",
+    "weight",
+    "scaffold_weighted",
+    "scaffold_refresh_real_weighted"
+  ],
+  "model": {
+    "architecture": "ConvNet",
+    "channel": 1,
+    "im_size": [
+      28,
+      28
+    ],
+    "num_classes": 10,
+    "width": 128,
+    "depth": 3,
+    "activation": "relu",
+    "normalization": "instancenorm",
+    "pooling": "avgpooling",
+    "grayscale_first_layer_padding": 3,
+    "mean": [
+      0.2861
+    ],
+    "std": [
+      0.353
+    ]
+  },
+  "synthesis": {
+    "config": "weighted_weak_x10",
+    "loss": "original",
+    "weak_dsa": "crop_flip",
+    "optimizer_lr": 1.0,
+    "optimizer_momentum": 0.5,
+    "dm_calibration": "per-alpha original gradient-norm ratio rule, then multiply by 10",
+    "initialization": "real images, fixed original per-alpha/client rule",
+    "optimization_space": "normalized images; no extra [0,1] clamp",
+    "reference_rounds": 1500,
+    "train_pool": [
+      [
+        0,
+        10,
+        30,
+        75
+      ],
+      [
+        150,
+        250,
+        400,
+        600
+      ],
+      [
+        750,
+        1000,
+        1200
+      ]
+    ],
+    "calibration_rounds": [
+      30,
+      400,
+      1000
+    ],
+    "calibration_repeats": 2,
+    "continuation_from": 8000,
+    "continuation": "same images and exact saved SGD momentum; absolute-iteration random seeds"
+  },
+  "diagnostics": {
+    "iterations": [
+      32000
+    ],
+    "clients": 32,
+    "reference_seeds": [
+      2025,
+      2026
+    ],
+    "model_rounds": [
+      20,
+      100,
+      300,
+      500,
+      900,
+      1500
+    ],
+    "repeats": 30,
+    "classifier_accuracy": false
+  },
+  "communication": {
+    "dtype": "float32",
+    "transport": "logical unicast",
+    "report_once_proxy_dataset_upload_separately": true,
+    "report_with_and_without_proxy_dataset_upload": true
+  },
+  "run_order": [
+    "synthesize",
+    "vectors",
+    "first_seed",
+    "remaining_seeds"
+  ],
+  "first_seed": 2025,
+  "first_seed_routes": 45,
+  "remaining_seed_routes": 180,
+  "total_fl_routes": 225,
+  "physical_jobs": 390,
+  "formal_training_started": false,
+  "reused_fl_routes": 225,
+  "complete_matrix_routes": 450
+}

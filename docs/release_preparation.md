@@ -75,4 +75,8 @@ Acquire and retain the relevant exact upstream license texts and source mappings
 
 ## Current status
 
-This folder contains metadata, retained license texts, and preparation documentation only. It is not an executable reproduction. Remaining work is source selection and portability, remaining source-specific notices, data/result manifests, a focused reproduction check, and public release after the final contents can be reviewed. The connected repository is private. No formal training has been started and no historical code, protocol, checkpoint, or result has been altered.
+This folder now contains a byte-identical snapshot of 55 historical source/configuration files, retained license texts, the ten-method paper specification, a 320-snapshot expected input inventory with 54 support files, and a server export tool with focused fixture tests. These preparation files are being synchronized to the private repository.
+
+The preparation tools are usable; the complete portable FL input binding and training quick-start are not yet accepted. The next external step is to export the 224 missing snapshots and 54 support files from the server using the explicit manifest. The other 96 snapshots reuse the earlier successful hash audit. Returned files must be validated before public data assets and end-to-end commands are finalized. Compact result and analysis scripts still need release selection. No full synthesis or FL rerun is needed for file recovery.
+
+The connected repository remains private. No formal training has been started and no historical code, protocol, checkpoint, manuscript, or result has been altered.

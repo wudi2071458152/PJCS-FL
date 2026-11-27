@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "date": "2026-11-27",
+  "policy": "Byte-identical selected historical sources; no numerical or path edits.",
+  "scope": "First PJCS client-selection work; LR=0.01, old-loss 32k proxies. Passive legacy imports are retained.",
+  "entrypoints": {
+    "fl": [
+      "legacy/synthesis_label2_study/run_dirichlet_baseline191.py",
+      "legacy/synthesis_label2_study/run_dirichlet_multiseed.py",
+      "legacy/synthesis_label2_study/run_fmnist_fl.py",
+      "legacy/synthesis_label2_study/run_fmnist_continue32000_fl.py"
+    ],
+    "synthesis": [
+      "legacy/synthesis_label2_study/run_dirichlet_reference.py",
+      "legacy/synthesis_label2_study/run_dirichlet_screen.py",
+      "legacy/synthesis_label2_study/run_fmnist_synthesis.py",
+      "legacy/synthesis_label2_study/run_fmnist_continue32000_synthesis.py"
+    ]
+  },
+  "files": [
+    {
+      "path": "legacy/cluster_sampling.py",
+      "source_path": "cluster_sampling.py",
+      "sha256": "57a945d3f716ca4dbd50aaed9098d2e3bce6b74c0d6b0d4761efe1dcea3e754b",
+      "bytes": 4160,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/cluster_sampling_guarded.py",
+      "source_path": "cluster_sampling_guarded.py",
+      "sha256": "31864502df426263ea923c5ad5e1ed0781ab29a9276c04ed73881f85bfeb230f",
+      "bytes": 918,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/inputs/fmnist_20261016/config.json",
+      "source_path": "inputs/fmnist_20261016/config.json",
+      "sha256": "a4c94bbfbfd185424beab0a5699582e5fbfe85ccb574ab3e4666ff07ce0f00b6",
+      "bytes": 2348,
+      "role": "frozen_configuration"
+    },
+    {
+      "path": "legacy/inputs/fmnist_continue32000_20261018/config.json",
+      "source_path": "inputs/fmnist_continue32000_20261018/config.json",
+      "sha256": "fac6a85441f16d72a63ed8dc3ebe2c466ccbfc69c2c95f70570de710ce484ab2",
+      "bytes": 3206,
+      "role": "frozen_configuration"
+    },
+    {
+      "path": "legacy/inputs/fmnist_extension_20261017/config.json",
+      "source_path": "inputs/fmnist_extension_20261017/config.json",
+      "sha256": "80c643ca545beda22d5209fae1f60a1788d667be5e280ca2b7c8c1075673e7a0",
+      "bytes": 2830,
+      "role": "frozen_configuration"
+    },
+    {
+      "path": "legacy/networks.py",
+      "source_path": "networks.py",
+      "sha256": "fd213761f5edc38e84d6ef653ec60e66fee6f786ddfd406fa6c7cb2734a2dfe5",
+      "bytes": 20353,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/baseline191_algorithms.py",
+      "source_path": "synthesis_label2_study/baseline191_algorithms.py",
+      "sha256": "ff062ecaa6a5f090f6d372bc8952d771ce67e08a68dc955c47b6028a58512035",
+      "bytes": 19693,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/baseline191_costs.py",
+      "source_path": "synthesis_label2_study/baseline191_costs.py",
+      "sha256": "27d50a735f921fc69dd20d631e2e5721a00ed7315835b4438ec9685ca3cf2c3a",
+      "bytes": 4408,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/cluster_factorial_common.py",
+      "source_path": "synthesis_label2_study/cluster_factorial_common.py",
+      "sha256": "0a98f08c1c88e9ea1d5f70e89262f46854461899c1a707c76203dbd132d912fb",
+      "bytes": 1121,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/diagnose_dirichlet_direction.py",
+      "source_path": "synthesis_label2_study/diagnose_dirichlet_direction.py",
+      "sha256": "e6068d6796604db2b7d36932a311285b4e7eacf62ff52669ea513b805b796e3f",
+      "bytes": 22445,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_a007_common.py",
+      "source_path": "synthesis_label2_study/dirichlet_a007_common.py",
+      "sha256": "ea87effe14a4d24116624089c4a01c9824e24bde25d15ac602b3d8c541bbb22b",
+      "bytes": 3023,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_continue32000_source_protocol.json",
+      "source_path": "synthesis_label2_study/dirichlet_continue32000_source_protocol.json",
+      "sha256": "c11f2cce7a6697a270955f9f285aa6c0391d3dee652cc0bbc2d64e50f71056a5",
+      "bytes": 39670,
+      "role": "frozen_configuration"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_continue32000_worker.py",
+      "source_path": "synthesis_label2_study/dirichlet_continue32000_worker.py",
+      "sha256": "202345d8eb14a7588b2b123bd4c5125220f07e054ee40277b0c727746fec8220",
+      "bytes": 6901,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_direction_pilot.py",
+      "source_path": "synthesis_label2_study/dirichlet_direction_pilot.py",
+      "sha256": "5889ef177b4af5403aca79bf55603911015aa7f7ecb0f46740763c92ff14fc79",
+      "bytes": 13275,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_dsa4000_worker.py",
+      "source_path": "synthesis_label2_study/dirichlet_dsa4000_worker.py",
+      "sha256": "8e84e0365a14282756d02b160e2e2ebf9332f5fe43b16d21e14032d5aabe0702",
+      "bytes": 10277,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_gamma24.py",
+      "source_path": "synthesis_label2_study/dirichlet_gamma24.py",
+      "sha256": "f0d346dd83a985e6f6d846a90077058f33d13956f566b10e3793b551142b5139",
+      "bytes": 11616,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_oldserver_common.py",
+      "source_path": "synthesis_label2_study/dirichlet_oldserver_common.py",
+      "sha256": "68a13b9a2000f14aa75d8ad1f196ce19af35f2c0f0b32f13c126ab433564be45",
+      "bytes": 10020,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/dirichlet_screen_common.py",
+      "source_path": "synthesis_label2_study/dirichlet_screen_common.py",
+      "sha256": "667b0289405928b9bd9811f97e28e5d898017cf6bd373f0c5a6ddc1a4716b0cc",
+      "bytes": 17110,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/fmnist_common.py",
+      "source_path": "synthesis_label2_study/fmnist_common.py",
+      "sha256": "2a0bbaa37117e3dee7fa0ba71733b7609ddc27219b2173dfcc360bc9f5de41c8",
+      "bytes": 16108,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/fmnist_continue32000_common.py",
+      "source_path": "synthesis_label2_study/fmnist_continue32000_common.py",
+      "sha256": "85045f91858b876a1165e26dfbf613da7052b6951bb5c43bb82e01448e206678",
+      "bytes": 14441,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/fmnist_extension_adapter.py",
+      "source_path": "synthesis_label2_study/fmnist_extension_adapter.py",
+      "sha256": "9130ae112cc9d009d84fadcb3ef13eb9951b66febe016f4bbbc084241a944531",
+      "bytes": 1170,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/fmnist_extension_common.py",
+      "source_path": "synthesis_label2_study/fmnist_extension_common.py",
+      "sha256": "0647937c426c859659f13cfd64dc3e5977405372222db1be1fd5941c6eaf59da",
+      "bytes": 1707,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/hcs_pilot_sampling.py",
+      "source_path": "synthesis_label2_study/hcs_pilot_sampling.py",
+      "sha256": "b6186e2a98d251e55451a25812bd755620f895e26645f5d2483ba484e8417e4b",
+      "bytes": 7558,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/joint_direction_sampling.py",
+      "source_path": "synthesis_label2_study/joint_direction_sampling.py",
+      "sha256": "8ee12d53bc9d71ef2a603599966d1138607049caed418bf8f4cfe72c962154aa",
+      "bytes": 14125,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/joint_direction_sampling_certfix.py",
+      "source_path": "synthesis_label2_study/joint_direction_sampling_certfix.py",
+      "sha256": "84d702fa0ea0ebc37290939d971c8ba9c696381e5a5303816c4a5fae10777f74",
+      "bytes": 4568,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/joint_direction_sampling_nonnegativefix.py",
+      "source_path": "synthesis_label2_study/joint_direction_sampling_nonnegativefix.py",
+      "sha256": "0ffc47f2306f45b5c91376891d537f85ffb0bbbdc47d76a59f2f6f154b56ec00",
+      "bytes": 4074,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/pracis_sampling_comparison.py",
+      "source_path": "synthesis_label2_study/pracis_sampling_comparison.py",
+      "sha256": "7e56a9fa17a97b4e544fd6bbb05e72702f6418e8807cf4eee09e1272afbfb010",
+      "bytes": 5042,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_a005_multiseed.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_a005_multiseed.py",
+      "sha256": "8345ac43e2c9adc18b371ca35d9a124ec10bfa9479bcaa6677d4c8c77fc91e08",
+      "bytes": 10000,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_a007_fl.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_a007_fl.py",
+      "sha256": "19f63b980d846e15fe1661e435e4ea84c7cf72e6b015e41d1164b20ba6d1317c",
+      "bytes": 18573,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_baseline191.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_baseline191.py",
+      "sha256": "504b2fcc4fc9209db6a256a670cd8da757ccc46a93eed81343fbdf8e5b96c132",
+      "bytes": 25496,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_cluster_history.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_cluster_history.py",
+      "sha256": "f7649ada621fdb66137cca1bc420d0e1710218e58cfba7ca1af7f259b75c8b48",
+      "bytes": 14816,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_cluster_k456.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_cluster_k456.py",
+      "sha256": "14d8fedafc9e4152f1e2d6f14ed64afe7a61bade0d466262cb5cfa2ceefe9549",
+      "bytes": 3606,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_control_variates.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_control_variates.py",
+      "sha256": "943ea6e1b696dd11308fe8cd640d488b3ae7aac4b20cdf6ab05925f5d756ff0c",
+      "bytes": 19758,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_ema_selection.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_ema_selection.py",
+      "sha256": "d2c24f13636877de459129d697ed900f952d228dcba43f277ff9a2558d1d2f40",
+      "bytes": 14966,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_hcs_pilot.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_hcs_pilot.py",
+      "sha256": "6535d09cface1d3ec2d23fa6e1923f688af2a05d5d077dd1275516ef4c71a5a0",
+      "bytes": 19153,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_joint_selection.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_joint_selection.py",
+      "sha256": "3b374f878f84af60a0282179b02aabfa25a6a4f5d9ccd6feb527c3287191ade4",
+      "bytes": 13061,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_multiseed.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_multiseed.py",
+      "sha256": "60a9bc331802826d3b236c3cfda13edab0b92a0750247784618349da4072efeb",
+      "bytes": 18259,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_oldserver.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_oldserver.py",
+      "sha256": "f123d808904e8fd0ac21bd0ef0a697f7d4cf9e10fe99a82214e962dd996c63ce",
+      "bytes": 9453,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_proxy_fl.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_proxy_fl.py",
+      "sha256": "9db7cb13e5465fb7ff2698005b17f3552a7b194ecedba9489e16b539fa1b05b4",
+      "bytes": 20630,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_proxy_fl_fingerprintfix.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_proxy_fl_fingerprintfix.py",
+      "sha256": "29fddfd5342d582c6278332a33b5ddd265b567b63264d6577f2d9fd8b32de97e",
+      "bytes": 1209,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_proxy_fl_gamma24.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_proxy_fl_gamma24.py",
+      "sha256": "203e05ae0f9af9bd2a5c1f52606e4ce8a6d287d63c4887d6be119de924369769",
+      "bytes": 1116,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_proxy_scaffold.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_proxy_scaffold.py",
+      "sha256": "19207fc60b95de094dd4572b88a54e0f6d4879cc3711247cd573075403ba11ea",
+      "bytes": 15975,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_reference.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_reference.py",
+      "sha256": "3e95728c684b0c5f743734d4bb4a2c953a5226badab303c71986afa9b34b9c21",
+      "bytes": 3187,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_scaffold_control_refresh.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_scaffold_control_refresh.py",
+      "sha256": "e8138fbc84270f31785fa9bb63b77e2b9deebd8e46b389186db2b8932d31e780",
+      "bytes": 11135,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_dirichlet_screen.py",
+      "source_path": "synthesis_label2_study/run_dirichlet_screen.py",
+      "sha256": "a3f90bf4034df7160358b8958ef43d5a9e61ceb6c716f18715661830f41fb4da",
+      "bytes": 16534,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_fmnist_continue32000_fl.py",
+      "source_path": "synthesis_label2_study/run_fmnist_continue32000_fl.py",
+      "sha256": "79a2670260031b4cef671067e812c23a3a854905eb167ebd06942c0f0b6b8d39",
+      "bytes": 3163,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_fmnist_continue32000_synthesis.py",
+      "source_path": "synthesis_label2_study/run_fmnist_continue32000_synthesis.py",
+      "sha256": "823a5dcc629735211ae7174779b73442a26c3ed21ec4684a37b3c61ff8a6679d",
+      "bytes": 7956,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_fmnist_extension_fl.py",
+      "source_path": "synthesis_label2_study/run_fmnist_extension_fl.py",
+      "sha256": "3b90342523d6594b9cc0e87913b6880ae5b2ada38efb99b599fb690331298e0a",
+      "bytes": 315,
+      "role": "provenance_dependency"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_fmnist_extension_synthesis.py",
+      "source_path": "synthesis_label2_study/run_fmnist_extension_synthesis.py",
+      "sha256": "dfb96d6b132426fec66a4baf4ff5064fa656623bb78375ef795057801bc7d3c6",
+      "bytes": 281,
+      "role": "provenance_dependency"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_fmnist_fl.py",
+      "source_path": "synthesis_label2_study/run_fmnist_fl.py",
+      "sha256": "ada938bb019f962cef5f01819e99c7c0bce7c41dc89bb5a54c012301e110f567",
+      "bytes": 16263,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/run_fmnist_synthesis.py",
+      "source_path": "synthesis_label2_study/run_fmnist_synthesis.py",
+      "sha256": "2fbfe3ef6dd7c52602d6bf7ff02b180b57487d2bb971aed43bec149185492be1",
+      "bytes": 19093,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/schedule_dirichlet_cluster_history.py",
+      "source_path": "synthesis_label2_study/schedule_dirichlet_cluster_history.py",
+      "sha256": "60347091e2c34f32a36b7a19a858388753cc21a7d2966b7d3de5e7ee513f3b96",
+      "bytes": 10363,
+      "role": "provenance_dependency"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/schedule_dirichlet_oldserver.py",
+      "source_path": "synthesis_label2_study/schedule_dirichlet_oldserver.py",
+      "sha256": "9b7cbcb5355c2bcc07a79691d98e529467ff3757b1e82cb6d96f143504470ba3",
+      "bytes": 17263,
+      "role": "provenance_dependency"
+    },
+    {
+      "path": "legacy/synthesis_label2_study/schedule_dirichlet_screen.py",
+      "source_path": "synthesis_label2_study/schedule_dirichlet_screen.py",
+      "sha256": "eb3f7be729d3d200266e9a75dec7dadfcb8163a68ac059448b22295d581bf589",
+      "bytes": 18508,
+      "role": "runtime_import"
+    },
+    {
+      "path": "legacy/utils.py",
+      "source_path": "utils.py",
+      "sha256": "b754a4fe078297477eaac1e214eaf393d13147d9a1c2acaf1fcaf2f38d19f428",
+      "bytes": 32221,
+      "role": "runtime_import"
+    }
+  ],
+  "validation": {
+    "date": "2026-11-27",
+    "source_byte_equality": "all 55 copied files matched their source bytes",
+    "python_compile_in_memory": 51,
+    "json_parse": 4,
+    "cli_help_exit_codes": {
+      "legacy/synthesis_label2_study/run_dirichlet_baseline191.py": 0,
+      "legacy/synthesis_label2_study/run_dirichlet_multiseed.py": 0,
+      "legacy/synthesis_label2_study/run_fmnist_fl.py": 0,
+      "legacy/synthesis_label2_study/run_fmnist_continue32000_fl.py": 0
+    },
+    "training_started": false,
+    "limits": "CLI help and static integrity only; no end-to-end asset binding or accuracy reproduction claimed."
+  }
+}
