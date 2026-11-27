@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import tarfile
 import unittest
+from unittest.mock import patch
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,16 @@ spec.loader.exec_module(tool)
 
 
 class AssetInstallTests(unittest.TestCase):
+    def test_tagged_source_can_explicitly_download_after_publication(self):
+        root, archive, item = self.fixture()
+        item.update(dataset='cifar10', url='https://example.invalid/prepared/data.tar.gz')
+        path = root / 'download_manifest.json'
+        path.write_text(json.dumps(dict(published=False, files=[item])), encoding='utf-8')
+        with patch.object(tool.sys, 'argv', ['get_assets.py', '--manifest', str(path), '--download']), \
+                patch.object(tool, 'download', return_value=archive) as fetch:
+            tool.main()
+        fetch.assert_called_once()
+
     def fixture(self, members=None):
         parent = ROOT / 'archive/test_runs'
         parent.mkdir(parents=True, exist_ok=True)

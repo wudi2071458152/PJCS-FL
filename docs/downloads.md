@@ -31,4 +31,4 @@ After public hosting is verified and the manifest is updated, network download a
 python -B tools/get_assets.py --download --install
 ```
 
-This network command deliberately refuses while `published=false`. Public URLs are planned under `https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/`; creating a private draft release alone does not make those URLs publicly usable. Keep the attachments outside normal Git source commits.
+The source snapshot's `published` field records hosting verification at preparation time. If it is false, the explicit network command displays that status and still attempts the requested release URLs; this allows the tagged source to work once its release attachments have been published. A missing/private attachment remains an HTTP error, and no unverified bytes are installed. Public URLs are planned under `https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/`; creating a private draft release alone does not make those URLs publicly usable. Keep the attachments outside normal Git source commits.

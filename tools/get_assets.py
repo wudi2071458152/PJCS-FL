@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 import shutil
+import sys
 import tarfile
 import urllib.request
 import uuid
@@ -107,7 +108,8 @@ def main():
     files = [item for item in manifest['files'] if args.dataset == 'all'
              or item['dataset'] in (args.dataset, 'initializations')]
     if args.download and not manifest.get('published', False):
-        parser.error('The configured public release is not published yet; install from --archive-dir instead')
+        print('Public hosting has not been verified in this source snapshot; '
+              'attempting the explicitly requested release URLs.', file=sys.stderr)
     results = []
     for item in files:
         archive = download(item, args.archive_dir) if args.download else safe(args.archive_dir, item['name'])
