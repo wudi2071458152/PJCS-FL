@@ -2,7 +2,7 @@
 
 Reproduction materials for **Joint Client Sampling with Reusable Synthetic Data for Non-IID Federated Learning**, by Di Wu.
 
-**Preparation in progress.** This private snapshot contains retained numerical sources, a portable FL input binding, a configurable matrix scheduler, recorded result tables, and data verification/export tools. The proxy data have been accepted locally; public download assets and the supplemental initialization bundle are not yet published. Repository: <https://github.com/wudi2071458152/PJCS-FL>.
+**Release preparation complete; public hosting pending.** This snapshot contains retained numerical sources, a portable FL input binding, a configurable matrix scheduler, recorded result tables, and data verification/export tools. Proxy data and all five-seed initialization states have been accepted and packaged. The three binary attachments are not yet published. Repository: <https://github.com/wudi2071458152/PJCS-FL>.
 
 The primary experiment uses real and proxy local learning rates of **0.01**, synthetic data optimized for **32,000 iterations**, two datasets (CIFAR-10 and Fashion-MNIST), five Dirichlet configurations, and five federated training seeds. Learning-rate-0.1 experiments are sensitivity results and must remain separate.
 
@@ -29,11 +29,11 @@ The first command checks frozen source bytes and inventory coverage; it does not
 
 [The proxy inventory](assets/proxy_manifest.json) records expected hashes from the formal LR=0.01 PJCS protocols. All 320 snapshots and 54 support files have now passed local acceptance; the combined dataset contains 110,000 synthetic images. See [the acceptance record](docs/data_acceptance.md), [the inventory guide](docs/proxy_inventory.md), and [the export instructions](docs/export_proxy_assets.md). Raw benchmark data are separate.
 
-The export tools default to in-memory/read-only output preflight. Only `--export` writes an archive; neither tool starts synthesis or FL training. [The initialization guide](docs/export_initializations.md) explains the remaining eight initial states for seeds 2027/2028/2029/2030. Their formal tensor fingerprints are fixed in [the initialization manifest](assets/initialization_manifest.json); initializers from a different environment must not silently replace them. Public dataset download links will be added after final packaging.
+The export tools default to in-memory/read-only output preflight. Only `--export` writes an archive; neither tool starts synthesis or FL training. The eight supplemental initial states for seeds 2027/2028/2029/2030 have also passed [acceptance](docs/initialization_acceptance.md). Their formal tensor fingerprints are fixed in [the initialization manifest](assets/initialization_manifest.json); initializers from a different environment must not silently replace them. [The download guide](docs/downloads.md) describes the three prepared attachments and checksum-verified installation; URLs remain planned until publication.
 
 ## Run and report
 
-See [the reproduction workflow](docs/reproduce.md) and [single-run guide](docs/portable_fl.md). Both `run_fl.py` and `tools/schedule_fl.py` default to preparation/plan mode; training requires `--run`. The default matrix is 500 runs, with the 100 seed2025 runs prioritized before the other seeds. No formal training was started while preparing this repository.
+See [the reproduction workflow](docs/reproduce.md) and [single-run guide](docs/portable_fl.md). Both `run_fl.py` and `tools/schedule_fl.py` default to preparation/plan mode; training requires `--run`. The default matrix is 500 runs, with the 100 seed2025 runs prioritized before the other seeds. The scheduler creates [verified compact result archives](docs/results_packaging.md) after the first seed and final matrix. No formal training was started while preparing this repository.
 
 [The recorded table](results/table.md) and [five-seed values](results/lr001_tail300.json) summarize the already audited LR=0.01 experiments. Run `python -B tools/report_results.py` to regenerate the table from those records. Stars identify the highest unrounded mean within each dataset/alpha column and do not denote statistical significance.
 
@@ -48,3 +48,5 @@ See [the release preparation record](docs/release_preparation.md) for the eviden
 Author: **Di Wu**. Software citation metadata is in [CITATION.cff](CITATION.cff). No DOI or publication status is assumed in this draft.
 
 Original contributions are intended to be released under the [MIT license](LICENSE). Third-party material retains its own notices and license conditions; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The manuscript's publication license does not determine the software or dataset license.
+
+The author's synthetic-data and initial-model asset contributions use [CC BY 4.0](DATA_LICENSE.txt); original benchmark rights and attribution remain with their sources. Raw benchmarks are downloaded separately, not redistributed in the PJCS attachments.

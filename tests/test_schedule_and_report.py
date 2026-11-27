@@ -2,12 +2,14 @@ import importlib.util
 import json
 from pathlib import Path
 import shutil
+import sys
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'tools'))
 
 
 def module(name):
@@ -58,8 +60,10 @@ class ScheduleAndReportTests(unittest.TestCase):
             def wait(self): return 0
             def terminate(self): raise AssertionError('Completed process must not be terminated')
 
-        with patch.object(worker.subprocess, 'Popen', CompletedProcess):
+        with patch.object(worker.subprocess, 'Popen', CompletedProcess), patch.object(
+                worker, 'package', return_value={'runs': 10}) as pack:
             worker.run(args, jobs)
+        self.assertEqual([len(call.args[1]) for call in pack.call_args_list], [10, 20])
         self.assertEqual(len(calls), 20)
         self.assertTrue(all(command[command.index('--seed') + 1] == '2025' for command, _ in calls[:10]))
         self.assertEqual({env['CUDA_VISIBLE_DEVICES'] for _, env in calls}, {'0', '1'})
@@ -82,6 +86,43 @@ class ScheduleAndReportTests(unittest.TestCase):
         value['records'][0]['mean_percent'] += 0.1
         with self.assertRaisesRegex(ValueError, 'Recorded mean differs'):
             report.render(value)
+
+    def test_failure_names_actual_job_with_two_active_workers(self):
+        worker = module('schedule_fl')
+        config = json.loads((ROOT / 'configs/paper_lr001.json').read_text(encoding='utf-8'))
+        jobs = worker.plan(config, seeds=[2025], methods=['fedavg'])[:2]
+        args = self.scheduler_fixture()
+
+        class Process:
+            pid = 123
+            def __init__(self, command, **kwargs):
+                self.failed = command[command.index('--alpha') + 1] == '0p05'
+                self.stopped = False
+            def poll(self): return 1 if self.failed else 0 if self.stopped else None
+            def terminate(self): self.stopped = True
+            def wait(self): return self.poll()
+
+        with patch.object(worker.subprocess, 'Popen', Process), self.assertRaisesRegex(
+                RuntimeError, 'cifar10_0p05_2025_fedavg'):
+            worker.run(args, jobs)
+
+    def test_package_failure_blocks_remaining_seeds_and_completion(self):
+        worker = module('schedule_fl')
+        config = json.loads((ROOT / 'configs/paper_lr001.json').read_text(encoding='utf-8'))
+        jobs = worker.plan(config, seeds=[2025, 2027], methods=['fedavg'])
+        args, started = self.scheduler_fixture(), []
+        class Process:
+            pid = 123
+            def __init__(self, command, **kwargs): started.append(command)
+            def poll(self): return 0
+            def wait(self): return 0
+        with patch.object(worker.subprocess, 'Popen', Process), patch.object(
+                worker, 'package', side_effect=ValueError('damaged result')), self.assertRaisesRegex(ValueError, 'damaged result'):
+            worker.run(args, jobs)
+        self.assertEqual(len(started), 10)
+        self.assertEqual(json.loads((args.output_root / 'scheduler_status.json').read_text())['state'], 'failed')
+        self.assertFalse((args.output_root / 'first_seed_complete.json').exists())
+        self.assertFalse((args.output_root / 'remaining_seeds_complete.json').exists())
 
 
 if __name__ == '__main__':

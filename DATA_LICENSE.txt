@@ -1,0 +1,52 @@
+PJCS-FL data assets and initial model states
+Copyright (c) 2026 Di Wu
+
+The author-created contributions to the released synthetic proxy image
+tensors, model initialization states, exact partition metadata and asset
+documentation are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0), to the extent the author holds the relevant rights.
+
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+You may share and adapt those contributions, including commercially, under
+the license terms. Give appropriate credit to Di Wu and PJCS-FL, retain the
+license link and supplied attribution, and indicate changes. No additional
+legal or technical restrictions are imposed by this notice.
+
+Suggested attribution:
+Di Wu, "Joint Client Sampling with Reusable Synthetic Data for Non-IID
+Federated Learning", PJCS-FL synthetic proxy data and model initializations,
+https://github.com/wudi2071458152/PJCS-FL, CC BY 4.0.
+
+Upstream sources and scope
+
+The proxy tensors were optimized from the respective clients' real benchmark
+data. Their initialization sampled real examples, and optimization used the
+original-loss, 32,000-iteration procedure documented in this repository.
+The assets are generated research inputs, not the original benchmark archive.
+
+CIFAR-10: Alex Krizhevsky's dataset, obtained from
+https://www.cs.toronto.edu/~kriz/cifar.html . Cite its original source as well
+as PJCS-FL. This notice does not claim ownership of or relicense any original
+CIFAR-10 material or other third-party rights.
+
+Fashion-MNIST: Zalando Research,
+https://github.com/zalandoresearch/fashion-mnist . Its upstream MIT notice is
+retained below. Cite the original dataset as well as PJCS-FL. This notice does
+not replace upstream notices or relicense third-party material.
+
+The repository's top-level MIT LICENSE applies to software; these asset terms
+do not change third-party software licenses. The Creative Commons legal code
+governs the licensed contributions; this notice is not a substitute for it.
+No warranties are provided, including any guarantee of reproduced accuracy.
+
+Fashion-MNIST upstream license notice:
+
+The MIT License (MIT) Copyright © 2017 Zalando SE, https://tech.zalando.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

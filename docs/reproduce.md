@@ -12,7 +12,7 @@ python -B tools/verify_release.py
 
 Place the accepted dataset artifacts under `artifacts/`, with `proxies/` and `metadata/` directly below that directory. Raw benchmarks are separate. CIFAR-10's raw directory must contain `cifar-10-batches-py/`; Fashion-MNIST's must contain the four original gzip files below `FashionMNIST/raw/`. The source manifests contain the exact benchmark-file hashes, and the portable runner verifies them before reading data. The benchmark source locations are <https://www.cs.toronto.edu/~kriz/cifar.html> and <https://github.com/zalandoresearch/fashion-mnist>.
 
-The data preparation currently has a private accepted local copy. Public data-download URLs are pending final release; no URL in this document implies that the assets have already been published. `docs/data_acceptance.md` and `assets/accepted_proxy_report.json` describe the accepted snapshot set.
+The three accepted binary attachments and their installation procedure are listed in `docs/downloads.md`. Public URLs are pending final release; the code's `published` flag prevents accidental download attempts before hosting has been verified. `docs/data_acceptance.md` and `assets/accepted_proxy_report.json` describe the accepted snapshot set. The supplemental eight initialization states have also been accepted; see `docs/initialization_acceptance.md`.
 
 For seeds 2027/2028/2029/2030, use the separately verified initialization assets described in `docs/export_initializations.md`, or a compatible environment whose regenerated state passes the formal tensor fingerprint. Seed2025 loads the original accepted per-alpha initial model. Do not replace expected hashes to accommodate a different initializer.
 
@@ -49,7 +49,7 @@ python -B tools/schedule_fl.py --run --workers 4 --gpus 0,1 \
 
 Concurrency is configurable. The four-worker default assigns two workers to each of two GPUs, sets each numerical-library environment to two threads, and retains the existing single-thread LP setting. It is a validated starting convention, not a guarantee of speed on other hardware. A worker failure stops the scheduler's own remaining workers and records a failed status. Already accepted matching outputs are verified/resumed by the worker; changed inputs or protocols are rejected. No other users' processes are managed.
 
-The scheduler records status, logs, and phase-completion lists below its output directory. It does not package model checkpoints for public distribution or claim that a phase-completion list is a new statistical analysis.
+The scheduler records status, logs, and phase-completion lists below its output directory. After validating the exact route identities, 1500-round coverage and result fingerprints, it produces `first_seed_results.tar.gz` and `final_results.tar.gz`, each with a SHA256 file. These archives contain compact JSON records and manifests, excluding model checkpoints, tensors and logs. Packaging failure prevents the next phase or final completion; see `docs/results_packaging.md`.
 
 ## Recorded paper results
 

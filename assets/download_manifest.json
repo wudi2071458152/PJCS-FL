@@ -1,0 +1,1977 @@
+{
+  "version": 1,
+  "release_tag": "v1.0.0",
+  "published": false,
+  "files": [
+    {
+      "name": "pjcs_cifar10_32k_v1.tar.gz",
+      "dataset": "cifar10",
+      "sha256": "93711c0da5d2393faee56961324dd3d7022c402772c607558e7f2fe3b744d684",
+      "bytes": 572572526,
+      "manifest_path": "metadata/cifar10/release_manifest.json",
+      "members": [
+        {
+          "path": "metadata/cifar10/0p05/counts.json",
+          "sha256": "8edf1828ad7f1d6a2131d2734e10051fac2916c3022c7315a3cb4d62b282daca",
+          "bytes": 5574
+        },
+        {
+          "path": "metadata/cifar10/0p05/initial_model.pt",
+          "sha256": "47ceea3e5fcd5beb8a894352aa7bb15d4c08aac5cd8e55dd4496d4b1818547f5",
+          "bytes": 1284716
+        },
+        {
+          "path": "metadata/cifar10/0p05/manifest.json",
+          "sha256": "6517a830eda0ad71789b69327c1d303954539b3bbd6f8a0f38730bfb23586d3a",
+          "bytes": 11132
+        },
+        {
+          "path": "metadata/cifar10/0p05/proxy/protocol.json",
+          "sha256": "238945d433178b7e261565312327ec2d82cc199f8f22b620a2905829885be222",
+          "bytes": 27938
+        },
+        {
+          "path": "metadata/cifar10/0p05/source/protocol.json",
+          "sha256": "9edc8840fdb432b50b59c5682a86fd57a9b599cc2fd137f1a4b7313187cd4d5d",
+          "bytes": 27555
+        },
+        {
+          "path": "metadata/cifar10/0p05/splits/alpha0p05.pt",
+          "sha256": "d0db53f7ea7cb60674570676f146bfd1b8cd40f686dea0ca08da6693454ed6b6",
+          "bytes": 151341
+        },
+        {
+          "path": "metadata/cifar10/0p07/counts.json",
+          "sha256": "b06932cb903fbb99628684c4b46a7f7c9918f9d185123c07651d0812c9543c56",
+          "bytes": 19139
+        },
+        {
+          "path": "metadata/cifar10/0p07/initial_model.pt",
+          "sha256": "b816f969369a7fd8ed9570a6fe56a17a2e9cbdf9e30d93b8318be20d925568c9",
+          "bytes": 1285049
+        },
+        {
+          "path": "metadata/cifar10/0p07/manifest.json",
+          "sha256": "c79b33da60ad49141b65e724d3c10c1f1d831866e1aa85bcc149d4a9b63625db",
+          "bytes": 1134
+        },
+        {
+          "path": "metadata/cifar10/0p07/source/protocol.json",
+          "sha256": "a054bae7799db9007e31492ac60d74a2edce66ae3f1ffde2161dd84c34bfea22",
+          "bytes": 15732
+        },
+        {
+          "path": "metadata/cifar10/0p07/splits/alpha0p07.pt",
+          "sha256": "bbc769b3181dc4efdc6cfcb49317dba40bc0077b1a1512298d9d0c5e1126980c",
+          "bytes": 151341
+        },
+        {
+          "path": "metadata/cifar10/0p1/counts.json",
+          "sha256": "0e97c0d806b57d1d6839706958a806e3ab302160971d26f3db53e9b90a90ee11",
+          "bytes": 25785
+        },
+        {
+          "path": "metadata/cifar10/0p1/initial_model.pt",
+          "sha256": "b816f969369a7fd8ed9570a6fe56a17a2e9cbdf9e30d93b8318be20d925568c9",
+          "bytes": 1285049
+        },
+        {
+          "path": "metadata/cifar10/0p1/manifest.json",
+          "sha256": "9579fa5dec37afbf87c5e6f3854457aeb20db61dd83dd66029d3cca126ea4dcb",
+          "bytes": 1212
+        },
+        {
+          "path": "metadata/cifar10/0p1/proxy/protocol.json",
+          "sha256": "a86b4479bcae72f4bee80c5f4f58dd3c678d54975bea71eab9e87844c61ed02b",
+          "bytes": 40542
+        },
+        {
+          "path": "metadata/cifar10/0p1/source/protocol.json",
+          "sha256": "c11f2cce7a6697a270955f9f285aa6c0391d3dee652cc0bbc2d64e50f71056a5",
+          "bytes": 39670
+        },
+        {
+          "path": "metadata/cifar10/0p1/splits/alpha0p1.pt",
+          "sha256": "d68f29d1cbea4d161683cc4455e483760251150a7b3aa4d9663f261c5e87d214",
+          "bytes": 150383
+        },
+        {
+          "path": "metadata/cifar10/0p2/counts.json",
+          "sha256": "0e97c0d806b57d1d6839706958a806e3ab302160971d26f3db53e9b90a90ee11",
+          "bytes": 25785
+        },
+        {
+          "path": "metadata/cifar10/0p2/initial_model.pt",
+          "sha256": "b816f969369a7fd8ed9570a6fe56a17a2e9cbdf9e30d93b8318be20d925568c9",
+          "bytes": 1285049
+        },
+        {
+          "path": "metadata/cifar10/0p2/manifest.json",
+          "sha256": "9579fa5dec37afbf87c5e6f3854457aeb20db61dd83dd66029d3cca126ea4dcb",
+          "bytes": 1212
+        },
+        {
+          "path": "metadata/cifar10/0p2/proxy/protocol.json",
+          "sha256": "a86b4479bcae72f4bee80c5f4f58dd3c678d54975bea71eab9e87844c61ed02b",
+          "bytes": 40542
+        },
+        {
+          "path": "metadata/cifar10/0p2/source/protocol.json",
+          "sha256": "c11f2cce7a6697a270955f9f285aa6c0391d3dee652cc0bbc2d64e50f71056a5",
+          "bytes": 39670
+        },
+        {
+          "path": "metadata/cifar10/0p2/splits/alpha0p2.pt",
+          "sha256": "c17adc83f783dadf2e3cf296d42a20f284dd02433857d1dd8c4c6b47b32a2b44",
+          "bytes": 150383
+        },
+        {
+          "path": "metadata/cifar10/0p3/counts.json",
+          "sha256": "0e97c0d806b57d1d6839706958a806e3ab302160971d26f3db53e9b90a90ee11",
+          "bytes": 25785
+        },
+        {
+          "path": "metadata/cifar10/0p3/initial_model.pt",
+          "sha256": "b816f969369a7fd8ed9570a6fe56a17a2e9cbdf9e30d93b8318be20d925568c9",
+          "bytes": 1285049
+        },
+        {
+          "path": "metadata/cifar10/0p3/manifest.json",
+          "sha256": "9579fa5dec37afbf87c5e6f3854457aeb20db61dd83dd66029d3cca126ea4dcb",
+          "bytes": 1212
+        },
+        {
+          "path": "metadata/cifar10/0p3/proxy/protocol.json",
+          "sha256": "a86b4479bcae72f4bee80c5f4f58dd3c678d54975bea71eab9e87844c61ed02b",
+          "bytes": 40542
+        },
+        {
+          "path": "metadata/cifar10/0p3/source/protocol.json",
+          "sha256": "c11f2cce7a6697a270955f9f285aa6c0391d3dee652cc0bbc2d64e50f71056a5",
+          "bytes": 39670
+        },
+        {
+          "path": "metadata/cifar10/0p3/splits/alpha0p3.pt",
+          "sha256": "01c029a1112467f12c7b69a917828bd2f3a7431db2cef8d460b90d06f2a8a9a0",
+          "bytes": 151557
+        },
+        {
+          "path": "metadata/cifar10/DATA_LICENSE.txt",
+          "sha256": "f3363267c7a91dd3f0a33846b7434aea858ee19fdedeae0eb4752738547463f4",
+          "bytes": 3299
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_00/iter_32000.pt",
+          "sha256": "97ad055f7c1c7c692a4cf01a1bc3bb14883cb6682a290faa72fb0bb87dd26f70",
+          "bytes": 2067160
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_01/iter_32000.pt",
+          "sha256": "b37b1d0cd88393d99fcec496d749091457c76385bad7bde08a5844f42475df69",
+          "bytes": 7169944
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_02/iter_32000.pt",
+          "sha256": "7bbc6ea7a7d3cda7e844b20dc337e3683f056e1768f8334e2ab84d014ec0c6e9",
+          "bytes": 1046552
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_03/iter_32000.pt",
+          "sha256": "feb9b3c7fa242771988f3cc7fe08eeb38081c70acfbc5927cc4488b9bf13cc3a",
+          "bytes": 480920
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_04/iter_32000.pt",
+          "sha256": "88fde576e339bcc63b6cc78b9199e5bc1dea14a8979e7fda33aa896a6fd66f3b",
+          "bytes": 4071384
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_05/iter_32000.pt",
+          "sha256": "cf074c7cbbbe6e950e1dfa1329517f895e69554ff6e25e4e270f352146f22b16",
+          "bytes": 972760
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_06/iter_32000.pt",
+          "sha256": "fdacaf9b940b513ee47227f4e969b0c7a1211ae877fc6ed801b753531b146bfc",
+          "bytes": 1440024
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_07/iter_32000.pt",
+          "sha256": "9a0ce3f60e3b61528b143bc0a3eea9a19f7e876ab5b445b7fff9af6e374b6901",
+          "bytes": 1907288
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_08/iter_32000.pt",
+          "sha256": "7ce15ad50fb9505bd307e0ac01bd6a48bea3386980e2fc82108e850260b3e1da",
+          "bytes": 3702488
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_09/iter_32000.pt",
+          "sha256": "0886d082d1b39fd8a578f04387bb97796fee2b4dd851669608b67b292eba3184",
+          "bytes": 5399320
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_10/iter_32000.pt",
+          "sha256": "0e46a04b5370477e720ea1f18c39c03946f81d3cfa55a5e885d1c729a50b64e9",
+          "bytes": 2128600
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_11/iter_32000.pt",
+          "sha256": "4c0f2f8a74c629fb5dd26d7ddf705c4e997129b4974b820b9e121d9b68b845d4",
+          "bytes": 13096664
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_12/iter_32000.pt",
+          "sha256": "380ecf18c5ba06fa14bd77577023d454e67f5de0d4f88123d4431e3eb4196b8c",
+          "bytes": 235032
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_13/iter_32000.pt",
+          "sha256": "04ec70826a4d2bc2c0a964edd48d23608f8162fefdfeec0788ae9060dd945e16",
+          "bytes": 739160
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_14/iter_32000.pt",
+          "sha256": "555f1c01886806c6aedde184fe29a989d16c28438b4fa55e971fc5f1e387c07d",
+          "bytes": 198168
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_15/iter_32000.pt",
+          "sha256": "8e4ff97ea6e1e6203f8b0a4b91bf1750eba720204f1b0e0315cbfc1df9f7d3e2",
+          "bytes": 26008
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_16/iter_32000.pt",
+          "sha256": "39d80212c9b11ba4cfefdd3478354d099728aaf7c05f3223d7413c9f745aa52d",
+          "bytes": 726872
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_17/iter_32000.pt",
+          "sha256": "74789891c402682fb338062d0ea422523aac245d0d56dd56eb16709d46437ee4",
+          "bytes": 1562968
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_18/iter_32000.pt",
+          "sha256": "acf8168210c8584c29b3d9dd81efc11c95687c807605feab2835caf8a4381f25",
+          "bytes": 17941272
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_19/iter_32000.pt",
+          "sha256": "1b237dc8073bc8b8925a9acc45c4b80b1836b6e028fceac975f9d1a418617720",
+          "bytes": 7735576
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_20/iter_32000.pt",
+          "sha256": "6949da6bf565b4648d133601d2a07f0bde1cc85290a3b2f0d1a1496a05c56496",
+          "bytes": 1452312
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_21/iter_32000.pt",
+          "sha256": "c13abe6c54e71e0379c928a4257a08633d47221b5d5e4dd73c15ac5d7ffabe52",
+          "bytes": 4944408
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_22/iter_32000.pt",
+          "sha256": "be199ed9f3138f291aa403e99bec0b4a6a4e47eb91ee6c372d38a9efc78b5414",
+          "bytes": 3739416
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_23/iter_32000.pt",
+          "sha256": "030d85fb1be4f33647b9986e92ad7893dea93adecf193c7b1d3109566576686c",
+          "bytes": 8805336
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_24/iter_32000.pt",
+          "sha256": "a281e48b463ff4a90c9113df7c9053a9e5bfa2a2c012db5784be9e3ea105a388",
+          "bytes": 5362456
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_25/iter_32000.pt",
+          "sha256": "9c42a9e6c7d4ee286b9b3047dd8b73fb2c4dd00c759390ca8dc93f940d6bd77c",
+          "bytes": 19933208
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_26/iter_32000.pt",
+          "sha256": "367e64ccfb61e29988009d3c20256c8b0fa1ed3690f9d5cfd9e1718d3662bf19",
+          "bytes": 235032
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_27/iter_32000.pt",
+          "sha256": "f80c00bb9b2b68e0b237df728dca233e2f1a6f3e5ed30d5d1c5deaa17e12a149",
+          "bytes": 517848
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_28/iter_32000.pt",
+          "sha256": "ea0834335c8c6a2ca92b9a3d5632f72c72144daab93c36e8489aa3b6cc0fd6f7",
+          "bytes": 124376
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_29/iter_32000.pt",
+          "sha256": "83774cd7fcc8b1b049ccaa22167623125affe531e5166f23853cff9880ade522",
+          "bytes": 4686168
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_30/iter_32000.pt",
+          "sha256": "33a1ddcc0d1df1cfde9065a30b9a95df92bfc30aaa0045f0b99e3a5aa43cfb9b",
+          "bytes": 431768
+        },
+        {
+          "path": "proxies/cifar10/0p05/client_31/iter_32000.pt",
+          "sha256": "42d5dd2e1dfc2f84244a120708e936cbc46da0825326b4ad9b0632af0dbdf7d1",
+          "bytes": 124376
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_00/iter_32000.pt",
+          "sha256": "d43e122aff78ddeccc91a1c7d963dd1c54be2b1866ab16878fd407bc5a3d5641",
+          "bytes": 592037
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_01/iter_32000.pt",
+          "sha256": "82b58d66351bea779a3cd74de5209cc4a132c83ad8a12abfab0726afb4b22978",
+          "bytes": 1292901
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_02/iter_32000.pt",
+          "sha256": "8b631cd8b554769d79408575e44536ee15987ba4e0d8d8e35f070fcfca745446",
+          "bytes": 6026853
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_03/iter_32000.pt",
+          "sha256": "a0e92960dea4c51e8ab3d13c8f4fe72bc1c1b44796173217d546e79316fe4fa6",
+          "bytes": 370661
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_04/iter_32000.pt",
+          "sha256": "3bee8a4a1584d574af98f572f3500358b0a5395d4e61b82291b9ad80d322639f",
+          "bytes": 1391269
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_05/iter_32000.pt",
+          "sha256": "e9cf410d3d720aedef24d62c23e049c96ac91b18b2c3135d9630c74693a1788b",
+          "bytes": 5043173
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_06/iter_32000.pt",
+          "sha256": "7acd644115721c01c71150e19f279388eccea9af8dafd82c00b6b791618b8302",
+          "bytes": 6051429
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_07/iter_32000.pt",
+          "sha256": "e6d1ec83341b59af38432f6d2f8dc36128fe4571132b20624321bd7fed02d2cf",
+          "bytes": 3911909
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_08/iter_32000.pt",
+          "sha256": "1e10aef4ebf5ca7ec1e7d8ef117b9236fd8bf8c7f640febc0a89f02950f736d5",
+          "bytes": 3653733
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_09/iter_32000.pt",
+          "sha256": "41b50fc032fd6ff80083903d449380f66d8bfb23298d39a1197ae053783f8663",
+          "bytes": 4157861
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_10/iter_32000.pt",
+          "sha256": "0aa69c08d96ff3ae721eacf8a71b48838f730536323fbbb7ff5824821b3395e8",
+          "bytes": 247717
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_11/iter_32000.pt",
+          "sha256": "978c1e23443f6e943b76c7323bedfbdd7381239e227bd60c239fdccf24e5a08a",
+          "bytes": 4379173
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_12/iter_32000.pt",
+          "sha256": "63af1336c4d54cb53edd033c1f2cd3a677f9c0ce59e40b2774166467aa0c2e89",
+          "bytes": 9482021
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_13/iter_32000.pt",
+          "sha256": "749f7b341c72750fa0eaf1cef26f5012fb44c6e7cf39e9a32d51c6d129a6cb84",
+          "bytes": 3690597
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_14/iter_32000.pt",
+          "sha256": "64910ef63394b3093fcedd73e3bdc7c0622a6d67996876619a582b023b1a6365",
+          "bytes": 1108453
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_15/iter_32000.pt",
+          "sha256": "b807c558e74509ef7856021370f6066986099c8b0c82681b612635d0f4f7b036",
+          "bytes": 13711845
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_16/iter_32000.pt",
+          "sha256": "9e47e422aac5ddfd6584da41fc4654859b749759fa3256a41548cf529ec3cf2d",
+          "bytes": 1575717
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_17/iter_32000.pt",
+          "sha256": "10c4ef3ce8e95ed09d916e6b4e607a7c408a8c84dba7ee318ce4d8143185e944",
+          "bytes": 1440421
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_18/iter_32000.pt",
+          "sha256": "73a058318f42117914d2605af01dd927360b7ffc4919873cce5bef1dbb7b4a60",
+          "bytes": 14744677
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_19/iter_32000.pt",
+          "sha256": "5fd095927465ca74a0e66e34f1ceb2358e8b5c76da9ad02eee8efb67d7cd9f7e",
+          "bytes": 1735525
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_20/iter_32000.pt",
+          "sha256": "f20b4fec3b1950f41cfb3bd918ffe758c88bf9015ed87f3e9cdecb9e15027080",
+          "bytes": 1133029
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_21/iter_32000.pt",
+          "sha256": "33966633a56b0993009aedf52fadeb8c09a388f5bf501e11237e93e26a15977c",
+          "bytes": 1206821
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_22/iter_32000.pt",
+          "sha256": "2c89ac1ec2c3d98fe87b661a3862a9fb59f4bc14d70994df8b173f79f40a6c31",
+          "bytes": 739557
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_23/iter_32000.pt",
+          "sha256": "a0eeacb392471101ef7b4d25f37fb2ed92fc92959044231fbb38d1e736019ddc",
+          "bytes": 3383205
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_24/iter_32000.pt",
+          "sha256": "70fbef3f97f669023a738e36d1742d1d15f30037bca77fda478dfec680e3e059",
+          "bytes": 5215333
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_25/iter_32000.pt",
+          "sha256": "e8c4b7f391d0ceb3b6f32a23431e6c127e9d46c4c283aac80d641f51c9760fe7",
+          "bytes": 4969381
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_26/iter_32000.pt",
+          "sha256": "738f7f9eb36c81bb16bf15d7769dd2eb60b18c2a59ff8b094556989a0ad10de8",
+          "bytes": 223141
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_27/iter_32000.pt",
+          "sha256": "dcc5a10809731ba04678b4fb38b66dfc4d51b3d117ab5cd99e45fd8e4080f205",
+          "bytes": 1698661
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_28/iter_32000.pt",
+          "sha256": "9914b484e62a1b3813da74accbf4a5a7918950c9bc8f31175ac10cb94dd93a2a",
+          "bytes": 751845
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_29/iter_32000.pt",
+          "sha256": "bc67eb10978a54b7bd9440e5e2e03a68be2c9f4c186f8c3bb58579f486551495",
+          "bytes": 4760357
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_30/iter_32000.pt",
+          "sha256": "b620993a2980f0fd3059c2b6693154a641e0b2d38bd1bc1a65b6df1bc5ccb4ef",
+          "bytes": 4637413
+        },
+        {
+          "path": "proxies/cifar10/0p07/client_31/iter_32000.pt",
+          "sha256": "10de23fc75dc3f17cafe927e6f364d5161e19f7d3b42f270221b79c923759f5a",
+          "bytes": 9691045
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_00/iter_32000.pt",
+          "sha256": "bcadc43ff2620884db15001b65f26e224acc979cc4911036d85f781f5274abfc",
+          "bytes": 5080037
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_01/iter_32000.pt",
+          "sha256": "6a33b910d61ef03b476806a780bdd545137d56c63ff8e68fe0a7f0b1813b5a92",
+          "bytes": 13133925
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_02/iter_32000.pt",
+          "sha256": "48d689577b09c1d12c0f18a4bc367368cf15b9fe5b00511b18aed7c68a828045",
+          "bytes": 6887589
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_03/iter_32000.pt",
+          "sha256": "01f059728e97f27f83e3e5313d916a9636bcadab30c73a3b9abb79a7999405e6",
+          "bytes": 1489637
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_04/iter_32000.pt",
+          "sha256": "8c538b0be9dbf0168987f28d1eac4dff84d119bbce2f989fdccbed151cc9a463",
+          "bytes": 4391461
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_05/iter_32000.pt",
+          "sha256": "24116feea445a6329ae1ce51bfec79e1355760fbe31ace70483e86ab8e418c11",
+          "bytes": 5953061
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_06/iter_32000.pt",
+          "sha256": "e73f7d8252b8fae14ce26dcb35d8acb365e027f20f8e1c1710b062a2e91f74cf",
+          "bytes": 1120741
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_07/iter_32000.pt",
+          "sha256": "88c914f6d2e0c8f60e202b355a804191326973f52b09b15054fe9a7635992ea8",
+          "bytes": 2559397
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_08/iter_32000.pt",
+          "sha256": "c24ee332efecb55550ff06640ad4c6321462e002197e9b65cae1bb2d87aa0bde",
+          "bytes": 4957093
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_09/iter_32000.pt",
+          "sha256": "6e2b4d4fcd3bc6cfee8c2f6f43093408a0d68dad523954918bcf737e02fa0085",
+          "bytes": 1981477
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_10/iter_32000.pt",
+          "sha256": "de7d308d7140f690a20a81330f0c58c018624e232bf08e51acd58be7c6bf188b",
+          "bytes": 2473317
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_11/iter_32000.pt",
+          "sha256": "5b44273bc6b0b8882a39240795d90a8a88860b86535f152c81a57ea2327d2630",
+          "bytes": 2424101
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_12/iter_32000.pt",
+          "sha256": "d113941708520419f6f8cff6adaf81d2e3728cb83f741f907fd9100f444a9fe7",
+          "bytes": 985509
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_13/iter_32000.pt",
+          "sha256": "067266a91fd6e1be9a0b7093898a9812fe7ebbffa64b13cb9a520bbf6d2c55b7",
+          "bytes": 5670245
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_14/iter_32000.pt",
+          "sha256": "f17e34c5ca5c5638ae83bf81afde5f2f62d18abc283773d330aae47e3c52dabe",
+          "bytes": 2153573
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_15/iter_32000.pt",
+          "sha256": "f9d15d45de959beceecd4407560a19f29803c43bb28611867d3706fed99ca3d4",
+          "bytes": 3985701
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_16/iter_32000.pt",
+          "sha256": "8a66346cd748755a4cd3b6b66ca9709c60ab21395eecb27bc6d84bf6eaa2acc4",
+          "bytes": 2534757
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_17/iter_32000.pt",
+          "sha256": "7baf5f8d50a3f5f802a8bc627a8db9c7d88bf7e5cd3cff831d5a92a52ad60831",
+          "bytes": 837925
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_18/iter_32000.pt",
+          "sha256": "39534a41d6ccdeb7b7465f45463f1805eb1613e5a1879c889e5d01c1b19a72cd",
+          "bytes": 1772453
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_19/iter_32000.pt",
+          "sha256": "178bdb51587707ebf3d42a589376b5519c70981d8860e7159d1ee5e692dc4c1d",
+          "bytes": 5928485
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_20/iter_32000.pt",
+          "sha256": "7a4f9bf91844fea1750a416667801415381324a5c0d85bcf9ea7d1406ca086e9",
+          "bytes": 5153829
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_21/iter_32000.pt",
+          "sha256": "82d299c1559d04b86ba4d605e3719aba88dbd9f623de3bb42b3f4caa8dbcf63f",
+          "bytes": 7637605
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_22/iter_32000.pt",
+          "sha256": "b21d0cb348d53ad06a241046e72e923f87b76bead3e7b07e3afa3e8e5278d9e5",
+          "bytes": 3764389
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_23/iter_32000.pt",
+          "sha256": "48682a3dd31fcb0730dd4afc664cd7ec3868d9ab21b239cef06e3e86a75a5701",
+          "bytes": 4108645
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_24/iter_32000.pt",
+          "sha256": "3cc12bc610fd4e09bf73a0e92baa2d8e856e75b1c25aa6af6df0d49492a09c13",
+          "bytes": 321509
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_25/iter_32000.pt",
+          "sha256": "d8607f1778be8bb4c8bdb9935a5d1feb954b88ccb4226815322a3233e00d26bd",
+          "bytes": 887141
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_26/iter_32000.pt",
+          "sha256": "44f703d994deab7ca5dfeea02db075f0ce8abe0353cab93f325f98d212a5bf54",
+          "bytes": 5916197
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_27/iter_32000.pt",
+          "sha256": "5c4c0850ee679172fd5216403985f7a7ef95a2f69bd9058a3ed90f8bd3907b6b",
+          "bytes": 3530725
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_28/iter_32000.pt",
+          "sha256": "c4decc0edfcabca50f14191fa40c106475acaa5bdde53540a27426bf2cd6ec14",
+          "bytes": 2374949
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_29/iter_32000.pt",
+          "sha256": "8e50e4c640212e61cea3dc65160d422032972ca92c2c8f3d7fba62f8b0e8f323",
+          "bytes": 4145573
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_30/iter_32000.pt",
+          "sha256": "8226f3c0534e1b2e33e5b30ae0a4db6b7952f0f959250dd183ce215a2a2a44b1",
+          "bytes": 8018789
+        },
+        {
+          "path": "proxies/cifar10/0p1/client_31/iter_32000.pt",
+          "sha256": "29c1981a4395800590476f173bd12c45b5adb050acaaab7e71db194ee84338ec",
+          "bytes": 837925
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_00/iter_32000.pt",
+          "sha256": "d0244e0e643040d7eb6ede9ee67891ed247d4861952bef809b7f1642c6b0d232",
+          "bytes": 2731493
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_01/iter_32000.pt",
+          "sha256": "7de5727ab20b5899fbf194852813ea6be08fa9c9a9a58a95c418e95c51c44b71",
+          "bytes": 2092133
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_02/iter_32000.pt",
+          "sha256": "f2135b79a2ab40b03ef5772349e13b243cdce6c2f4ecfdfb7f92134639af8253",
+          "bytes": 3284837
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_03/iter_32000.pt",
+          "sha256": "958f93be4d11f16053d7dd3bd89f1dc94bd64029b072c366501b70e89e4f620a",
+          "bytes": 3014309
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_04/iter_32000.pt",
+          "sha256": "f4b60797807a7e4cfa1a204682691925ff5f6a25e0563325d3f5acc86641603e",
+          "bytes": 1563365
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_05/iter_32000.pt",
+          "sha256": "cccd6d297196e92fed29cc9616fdee9ea33d86eee7221aea2762bd1a1e838e19",
+          "bytes": 1797029
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_06/iter_32000.pt",
+          "sha256": "245468ca105d36f136577e136156b328895505c0ac4ca4681c25aab880592111",
+          "bytes": 3137253
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_07/iter_32000.pt",
+          "sha256": "e2e71d5f316838b5a5ab0da08e6a595366355f83b940475baaa33fa3f67a0f9e",
+          "bytes": 8215525
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_08/iter_32000.pt",
+          "sha256": "d43ec9ac822f17656c5dbc9a26cedf8815593b625ef291db840f7927321c2c90",
+          "bytes": 9334437
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_09/iter_32000.pt",
+          "sha256": "697827eaef0385cd42fd011b5f8a40f2c779a7eb778f3d623d89692e1aaf7c63",
+          "bytes": 3690597
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_10/iter_32000.pt",
+          "sha256": "334427f3bfe8290aa6b3354d9dfc70b08359326892a97292d7680bc8a2b4f4d6",
+          "bytes": 1440421
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_11/iter_32000.pt",
+          "sha256": "492b77ecb7b80d66116c2e571545ec28351586db745a78435003ea329fa6f38d",
+          "bytes": 5153829
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_12/iter_32000.pt",
+          "sha256": "8c6a4c72a592125677175be95a857d6345bf85fa379c1db839f63f45c0760e86",
+          "bytes": 788773
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_13/iter_32000.pt",
+          "sha256": "37e7cf45b90ff4552f15204999726cd35afdbe8d803b9ac1292c32d86decab37",
+          "bytes": 6826085
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_14/iter_32000.pt",
+          "sha256": "b8519a059d87b79b6b71d45859a96a259231632267f0e2df4a83a393503752e4",
+          "bytes": 6014565
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_15/iter_32000.pt",
+          "sha256": "0be48e15109a06d3a57610aec042666abe05f5ad7d18419679f35efd1160825d",
+          "bytes": 4207013
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_16/iter_32000.pt",
+          "sha256": "31b649ebda4bd0df528d881a37b0bff7b3630a6d4cd24af4a13c1812485c7078",
+          "bytes": 8350757
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_17/iter_32000.pt",
+          "sha256": "7006ba9644c0a2c3decbf04d124c6860b4ef6deebdfd5d6b40436cf4995d64fd",
+          "bytes": 2829861
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_18/iter_32000.pt",
+          "sha256": "9ecb1dfd3d84aa101e3cf6dbdc824c7f1822054c3cd6a7d6b990d199215a00c6",
+          "bytes": 1083877
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_19/iter_32000.pt",
+          "sha256": "2f8af9edb84e993c40624c1bb6751b7fc5ac5778c5ec04c4f777ea1c7fa26ad8",
+          "bytes": 1772453
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_20/iter_32000.pt",
+          "sha256": "ba07068e0974286038d79c62df42dea4d1592d880bd9083e4a8d4af95eed2f16",
+          "bytes": 4268517
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_21/iter_32000.pt",
+          "sha256": "8dcba363021e405cc479ad112e1773c64e73cde22744ea3043cb8d46089644f2",
+          "bytes": 2399525
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_22/iter_32000.pt",
+          "sha256": "844233bdbd3744566dd2346c15c77d940ce5418b0004e0e96556231f80765b8c",
+          "bytes": 7526949
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_23/iter_32000.pt",
+          "sha256": "abdd019095a13529ca5565869c6fe1bd9433397ec3b4821b7b8573b110c8a701",
+          "bytes": 5116965
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_24/iter_32000.pt",
+          "sha256": "157d642f5b66d3bf60ee69305a308c139f9f45091115e07f327348bd8d0fec9d",
+          "bytes": 3592229
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_25/iter_32000.pt",
+          "sha256": "f22240db0ecfc353b890ce21dd1bb35d13d9b99b41b10f6ceefefb9a61ff2792",
+          "bytes": 837925
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_26/iter_32000.pt",
+          "sha256": "e46b7e9a6941e4c64f63fb8998c77b0191dbee70d40a6341b0a1cbe4253f6791",
+          "bytes": 505957
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_27/iter_32000.pt",
+          "sha256": "51629d82f2836cbbb1e6a0b92f36cce95ed8d725cb986d46211e04b8db8a3e18",
+          "bytes": 7256421
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_28/iter_32000.pt",
+          "sha256": "fa2e4dcb03af7c376d0a7db759f54116d9ac9525d232d876b3acc43994c868fd",
+          "bytes": 4957093
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_29/iter_32000.pt",
+          "sha256": "4bdda3050396fb149ff5a0180cf34baeb5276233fe75c76f1b2e6687fdc47fb0",
+          "bytes": 2042917
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_30/iter_32000.pt",
+          "sha256": "816650d4d6d9ec45b1bd0ac1eba6713db63f11b83edcbff3962ce7013bfec35c",
+          "bytes": 3149605
+        },
+        {
+          "path": "proxies/cifar10/0p2/client_31/iter_32000.pt",
+          "sha256": "f7deb1edfe04a73d3fe39374f4390343193b9a6d5be98f299baaeefb21828783",
+          "bytes": 4034917
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_00/iter_32000.pt",
+          "sha256": "617977a87fea1729b4a1a3ddf128790952b67ea27ad583d14adcc151b7372656",
+          "bytes": 2903653
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_01/iter_32000.pt",
+          "sha256": "5ce8f9ac414f959e442c57fab0e093e255b23dda614c46bf6a3bbf9bc76cb096",
+          "bytes": 198565
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_02/iter_32000.pt",
+          "sha256": "1d939593578ee972df7477fada54b76049c05f7668fcdf807d73393e0376b89c",
+          "bytes": 1452709
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_03/iter_32000.pt",
+          "sha256": "8a348b6e5bece25eb9b4111f4539a83a8b4e5927254aa7585e8f1b6dbd5669f3",
+          "bytes": 2411813
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_04/iter_32000.pt",
+          "sha256": "e92da923901bac5adfd80d0c09b3fd43a92dba5113dd8c31171a7a142d7ee16b",
+          "bytes": 2989733
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_05/iter_32000.pt",
+          "sha256": "683a9b70ba40503461fd42b0420131ffc27f37f43e7d354571eee028f8ee0d1a",
+          "bytes": 948581
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_06/iter_32000.pt",
+          "sha256": "c52d860d561e3969654c8a11fa78e1beb0ac7ad78369ee3840916ce6f6cc08e9",
+          "bytes": 6813797
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_07/iter_32000.pt",
+          "sha256": "1c58229218a83f2a67c3275126e5f5916fa2fe21414ef6cfd52b693caa3c6620",
+          "bytes": 6186661
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_08/iter_32000.pt",
+          "sha256": "c5d01790dff22ea61023ba79f2f096f9c444402390e4047ca5cfcbc14d33d3eb",
+          "bytes": 8510629
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_09/iter_32000.pt",
+          "sha256": "dfc54901b4ff2c7204386c6133cccaa1658f3cfcb17cdf76392ffa5bda9ba9e4",
+          "bytes": 2805285
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_10/iter_32000.pt",
+          "sha256": "1ed052469e2e261128d08756ce5dea018588afa654d10f69c3278c4e47cb12ca",
+          "bytes": 1440421
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_11/iter_32000.pt",
+          "sha256": "7dd9c48479fde2092c22ad257c2221e5a941d3623df25f31db57cf71c1e605ab",
+          "bytes": 5264485
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_12/iter_32000.pt",
+          "sha256": "4094d79936224265f6e872f8cc5fb91bde2cdf84c1d35bd1ca649e4dc182728b",
+          "bytes": 4784933
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_13/iter_32000.pt",
+          "sha256": "6ef087923d88cd2b647c594eef318b6429f9d29e1d15045e9167a4169015af32",
+          "bytes": 3358629
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_14/iter_32000.pt",
+          "sha256": "3778975d0cd56cb1f4f05a8dcdbc61540f46d066a51343e4053cbd5ebc3d0e4c",
+          "bytes": 6580133
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_15/iter_32000.pt",
+          "sha256": "9989815c80ef33132e5d8fd806b5611d052b9f76a3dd6819067a92dcbd721102",
+          "bytes": 7071973
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_16/iter_32000.pt",
+          "sha256": "5898bbaf19300d94451e3311b665a5a4fd8a35d41f28e04ae93f7d8c4c2cc084",
+          "bytes": 4981669
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_17/iter_32000.pt",
+          "sha256": "bdc6f3e31d04349e8e9d21fa05ceb010063d241b0caacf0df61349f07cb2b9d0",
+          "bytes": 4330021
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_18/iter_32000.pt",
+          "sha256": "6fa6253af3434d4ca9172e1642919710fdb45930499fe0ad89f740d92333deb7",
+          "bytes": 1833893
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_19/iter_32000.pt",
+          "sha256": "01a8ee6b4a28ecbe8d4db0555b93248b222a05e92f0141f372bf49788da217ec",
+          "bytes": 3702885
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_20/iter_32000.pt",
+          "sha256": "a5210e751bc52ebd47ff513c75d7474619611b17e7d99de019fe824e89c9363f",
+          "bytes": 2350309
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_21/iter_32000.pt",
+          "sha256": "9ad27b15c7b9376fd538f5b0186df4f8d5900ae2c85405b9f3a9db4a8b1bdd0d",
+          "bytes": 2288869
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_22/iter_32000.pt",
+          "sha256": "ba1470294039e0f9c3b8cf06e83c7199e4cc57d5790db10a1c3ddd37c180706f",
+          "bytes": 7440869
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_23/iter_32000.pt",
+          "sha256": "1ed18c02d2946b9cef916d33159b5cdb7d6487749c080d234f43834c4651d331",
+          "bytes": 5473509
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_24/iter_32000.pt",
+          "sha256": "c4c948cc1fca55c19d6bb9c1760c1b0d54f86229a4bb828ace8b86140b5b23e3",
+          "bytes": 2362661
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_25/iter_32000.pt",
+          "sha256": "02412ba32a9f8cc162b2b2437be5d514e2464e71388f3d4badb52a03b1c24329",
+          "bytes": 1784741
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_26/iter_32000.pt",
+          "sha256": "0e2d471477859ae170feb6fbd5f00cd5850c4ad059ae50e5cf95f9a8325d010a",
+          "bytes": 333797
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_27/iter_32000.pt",
+          "sha256": "a19ab40386d58db664892de034fd0fad755739285ee5d7fa78e7e5c95d27492b",
+          "bytes": 6149797
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_28/iter_32000.pt",
+          "sha256": "c5f58ee89213273a4734b72ff4a6fb47e2002b5f35263cb5f46e7b0d01418795",
+          "bytes": 6494117
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_29/iter_32000.pt",
+          "sha256": "820a465571800ed671183792629d047763fe2b87fc4fb4258a7d2ed5d607422f",
+          "bytes": 1809317
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_30/iter_32000.pt",
+          "sha256": "136a700d70d00a5da78def0d82d35fa5fe91f50db0d4c6885bc3700ee56d1c3d",
+          "bytes": 4784933
+        },
+        {
+          "path": "proxies/cifar10/0p3/client_31/iter_32000.pt",
+          "sha256": "a66215f4bfd82fa0062032641750318461f53185270793c324d39ff25f54723f",
+          "bytes": 3174181
+        },
+        {
+          "path": "metadata/cifar10/release_manifest.json",
+          "sha256": "75a63f9377da2ee0798440246944fa501016e5e00b881a993f1a933b3c697065",
+          "bytes": 34303
+        }
+      ],
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_cifar10_32k_v1.tar.gz"
+    },
+    {
+      "name": "pjcs_fmnist_32k_v1.tar.gz",
+      "dataset": "fmnist",
+      "sha256": "200cdf82d1f415bbe6e33aa81ad41247dd3645f52aff4900acd623ea179d70f5",
+      "bytes": 172339728,
+      "manifest_path": "metadata/fmnist/release_manifest.json",
+      "members": [
+        {
+          "path": "metadata/fmnist/0p05/counts.json",
+          "sha256": "a0a40f205a5449545a06da337aab4ac26546c45285ecc7c262368c199f332e1d",
+          "bytes": 25584
+        },
+        {
+          "path": "metadata/fmnist/0p05/initial_model.pt",
+          "sha256": "4b243575e020adacfbfbf9bedd0684e5dda556bde18c9ca22908f3d279937910",
+          "bytes": 1275833
+        },
+        {
+          "path": "metadata/fmnist/0p05/manifest.json",
+          "sha256": "2370cbb4d33f05113c538795e7735e1a0a619ae3eead317b2f730c441be87035",
+          "bytes": 1179
+        },
+        {
+          "path": "metadata/fmnist/0p05/source/protocol.json",
+          "sha256": "9aaacbaaf52c2775f2cf44e256fda3dc4b2c4c856352f242317d4cc4e7cd480f",
+          "bytes": 62395
+        },
+        {
+          "path": "metadata/fmnist/0p05/splits/alpha0p05.pt",
+          "sha256": "d44d25d41a7ad2fa97f4c5d4dd1e3e70098e7a757301d66000352b024ee23ebe",
+          "bytes": 181357
+        },
+        {
+          "path": "metadata/fmnist/0p07/counts.json",
+          "sha256": "a0a40f205a5449545a06da337aab4ac26546c45285ecc7c262368c199f332e1d",
+          "bytes": 25584
+        },
+        {
+          "path": "metadata/fmnist/0p07/initial_model.pt",
+          "sha256": "4b243575e020adacfbfbf9bedd0684e5dda556bde18c9ca22908f3d279937910",
+          "bytes": 1275833
+        },
+        {
+          "path": "metadata/fmnist/0p07/manifest.json",
+          "sha256": "2370cbb4d33f05113c538795e7735e1a0a619ae3eead317b2f730c441be87035",
+          "bytes": 1179
+        },
+        {
+          "path": "metadata/fmnist/0p07/source/protocol.json",
+          "sha256": "9aaacbaaf52c2775f2cf44e256fda3dc4b2c4c856352f242317d4cc4e7cd480f",
+          "bytes": 62395
+        },
+        {
+          "path": "metadata/fmnist/0p07/splits/alpha0p07.pt",
+          "sha256": "1bc7cb6196e271e0a3820647796e3cf91e98db04b29c5a20be8a2f72f1ba8190",
+          "bytes": 181357
+        },
+        {
+          "path": "metadata/fmnist/0p1/counts.json",
+          "sha256": "a0a40f205a5449545a06da337aab4ac26546c45285ecc7c262368c199f332e1d",
+          "bytes": 25584
+        },
+        {
+          "path": "metadata/fmnist/0p1/initial_model.pt",
+          "sha256": "4b243575e020adacfbfbf9bedd0684e5dda556bde18c9ca22908f3d279937910",
+          "bytes": 1275833
+        },
+        {
+          "path": "metadata/fmnist/0p1/manifest.json",
+          "sha256": "2370cbb4d33f05113c538795e7735e1a0a619ae3eead317b2f730c441be87035",
+          "bytes": 1179
+        },
+        {
+          "path": "metadata/fmnist/0p1/source/protocol.json",
+          "sha256": "9aaacbaaf52c2775f2cf44e256fda3dc4b2c4c856352f242317d4cc4e7cd480f",
+          "bytes": 62395
+        },
+        {
+          "path": "metadata/fmnist/0p1/splits/alpha0p1.pt",
+          "sha256": "64c2f9d976dcef7a9b5ddd06bf24042a7fc6a13a353bfb30aa1246b27747b848",
+          "bytes": 181357
+        },
+        {
+          "path": "metadata/fmnist/0p2/counts.json",
+          "sha256": "a0a40f205a5449545a06da337aab4ac26546c45285ecc7c262368c199f332e1d",
+          "bytes": 25584
+        },
+        {
+          "path": "metadata/fmnist/0p2/initial_model.pt",
+          "sha256": "4b243575e020adacfbfbf9bedd0684e5dda556bde18c9ca22908f3d279937910",
+          "bytes": 1275833
+        },
+        {
+          "path": "metadata/fmnist/0p2/manifest.json",
+          "sha256": "2370cbb4d33f05113c538795e7735e1a0a619ae3eead317b2f730c441be87035",
+          "bytes": 1179
+        },
+        {
+          "path": "metadata/fmnist/0p2/source/protocol.json",
+          "sha256": "9aaacbaaf52c2775f2cf44e256fda3dc4b2c4c856352f242317d4cc4e7cd480f",
+          "bytes": 62395
+        },
+        {
+          "path": "metadata/fmnist/0p2/splits/alpha0p2.pt",
+          "sha256": "87d2eb5da3cc16d70bfbe044f21b36c444cb71b98a500b6c7962d127931baf90",
+          "bytes": 181357
+        },
+        {
+          "path": "metadata/fmnist/0p3/counts.json",
+          "sha256": "a0a40f205a5449545a06da337aab4ac26546c45285ecc7c262368c199f332e1d",
+          "bytes": 25584
+        },
+        {
+          "path": "metadata/fmnist/0p3/initial_model.pt",
+          "sha256": "4b243575e020adacfbfbf9bedd0684e5dda556bde18c9ca22908f3d279937910",
+          "bytes": 1275833
+        },
+        {
+          "path": "metadata/fmnist/0p3/manifest.json",
+          "sha256": "2370cbb4d33f05113c538795e7735e1a0a619ae3eead317b2f730c441be87035",
+          "bytes": 1179
+        },
+        {
+          "path": "metadata/fmnist/0p3/source/protocol.json",
+          "sha256": "9aaacbaaf52c2775f2cf44e256fda3dc4b2c4c856352f242317d4cc4e7cd480f",
+          "bytes": 62395
+        },
+        {
+          "path": "metadata/fmnist/0p3/splits/alpha0p3.pt",
+          "sha256": "1d0b58e6f0e35faa42235c9291382b1523b2946576abf560ee8b01c03767827b",
+          "bytes": 181357
+        },
+        {
+          "path": "metadata/fmnist/DATA_LICENSE.txt",
+          "sha256": "f3363267c7a91dd3f0a33846b7434aea858ee19fdedeae0eb4752738547463f4",
+          "bytes": 3299
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_00/iter_32000.pt",
+          "sha256": "19b705b6e6e5ae62c17673d7581bd9add44a40d6233193a07626ea82998642e2",
+          "bytes": 297317
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_01/iter_32000.pt",
+          "sha256": "32cbc0e561f6e016850b77fdcde449a3615d116c6a7afed4f24d6dbf7ec98ffe",
+          "bytes": 2268645
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_02/iter_32000.pt",
+          "sha256": "050cbd293b2106bddefb351b8d879dea5d272129ea2ba7a40b62fd577f7214a3",
+          "bytes": 366501
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_03/iter_32000.pt",
+          "sha256": "5e08f9cdbb77a760531ef0a4fb0e9ca3ac3e2388c2e88931b51897c9c1396589",
+          "bytes": 203045
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_04/iter_32000.pt",
+          "sha256": "5714345e895d2c07e0ca9a8c6394f55a680c50167f7ccc104eec467c05049953",
+          "bytes": 193573
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_05/iter_32000.pt",
+          "sha256": "3876fbe0fc0a8143ce39f6c28f4a7711aa615ba356cd603d61c5556d9168c9ac",
+          "bytes": 1221669
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_06/iter_32000.pt",
+          "sha256": "312af60e3150b9ee93f4d45739b166e7c75d1aaf4ca219011b719c8c84d1a137",
+          "bytes": 753189
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_07/iter_32000.pt",
+          "sha256": "df0285d5c505f4acaf29edbe91cd930b4a4412def3cf2210923e07c0d70ba3e4",
+          "bytes": 2573605
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_08/iter_32000.pt",
+          "sha256": "4ae99d6b090dc319740c38bd51b2415f6e61d98473b29852c827804be5e6e156",
+          "bytes": 904101
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_09/iter_32000.pt",
+          "sha256": "9b5e25bcea5887c8f610f2c2f37a5f477bccfb3255e6d8bf712c1142e72f79f9",
+          "bytes": 3057765
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_10/iter_32000.pt",
+          "sha256": "e5f9ce45d55760b4524e79418f74fd4ae83fd03cf30a077ad6773f2735360207",
+          "bytes": 1963685
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_11/iter_32000.pt",
+          "sha256": "f7c45ee8f934c2c8dc135f70e408313666f0be7bcaa932092ed756ebdd89177d",
+          "bytes": 1680677
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_12/iter_32000.pt",
+          "sha256": "d0896c138b6317dbe39f3773c95462591228ae54fc4b5b22265559f75d751577",
+          "bytes": 1435493
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_13/iter_32000.pt",
+          "sha256": "7e23fb1cccfce5599d668ecfb556af5d94b7f2e0cb85077f091b080707f5d2c0",
+          "bytes": 1756133
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_14/iter_32000.pt",
+          "sha256": "368637f630e01fbda0ae8d86c29a5d98c0852a09b5ba5678b5c2efed9b1f4c91",
+          "bytes": 3004325
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_15/iter_32000.pt",
+          "sha256": "ad20732cf13b1185f61386fee24e308cb293711ba02d6a75ce944023fd493755",
+          "bytes": 2906853
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_16/iter_32000.pt",
+          "sha256": "755a9a8da13e93e233a41b613d1a7a11995f2036cb11e65720a8c6e3c27dc957",
+          "bytes": 247013
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_17/iter_32000.pt",
+          "sha256": "bec2813e30fab2daafe8d30fb5ffa1c71c9d7d63e94b34bdca926e667a368d75",
+          "bytes": 108709
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_18/iter_32000.pt",
+          "sha256": "9e950b6bc1348c6d2beaea62edc277bf4b18c673e08c47a5b76b5f1878ccf6fd",
+          "bytes": 992165
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_19/iter_32000.pt",
+          "sha256": "51bb04c2c7b8fe90f684e015bbe64ff59f62f4356e0661a352a96237d6e08505",
+          "bytes": 1117925
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_20/iter_32000.pt",
+          "sha256": "033a5dac955d5dc70ffe6489d6baf89417ca8775c33f24a687def844a56ee776",
+          "bytes": 586597
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_21/iter_32000.pt",
+          "sha256": "1c2129651a820076b5076f063ec723bb4d6dfbcdc6c9967baefed29eda2e0c7d",
+          "bytes": 2095717
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_22/iter_32000.pt",
+          "sha256": "bfe31cd6fd87eec61d349bb70d43b253c4ea8dd7c7c44e922f9fd6fcb26776d0",
+          "bytes": 121253
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_23/iter_32000.pt",
+          "sha256": "2b23c18da6ed8b671b23138f087e45e29c8a32bb339bc47fe745198914c784af",
+          "bytes": 508005
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_24/iter_32000.pt",
+          "sha256": "a177de897f6ae9123fa505eb13afc6d68c5ae9d06a73986b607de3d8bf3ab646",
+          "bytes": 20645
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_25/iter_32000.pt",
+          "sha256": "8fb436de2fb30edcd07ab1b9cfb7314c77c57d7bb4232bee02045a593b25eac7",
+          "bytes": 3787173
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_26/iter_32000.pt",
+          "sha256": "787fa465d3735b36b72301d21829a2bbfbc4a95d8353f7ed279a46d889c079f5",
+          "bytes": 102437
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_27/iter_32000.pt",
+          "sha256": "baa2609971d09a7ba2daed74674c2e54f5654c013e512b407fcb266878107f13",
+          "bytes": 1944805
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_28/iter_32000.pt",
+          "sha256": "73e4299213b3bba228a1ea4d1a3ff486e74ce69ca696007979bb28ab56246f00",
+          "bytes": 445093
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_29/iter_32000.pt",
+          "sha256": "508d36fe246b857d6e34e5cb67497916c41545a16daa154029d174d499acdbca",
+          "bytes": 278501
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_30/iter_32000.pt",
+          "sha256": "8542af26e16a78194118bbb316102724ca7ce862a73ee402fa4bb63f43b15a08",
+          "bytes": 203045
+        },
+        {
+          "path": "proxies/fmnist/0p05/client_31/iter_32000.pt",
+          "sha256": "9d832ffa625ce033cdf6db2c25c5ecf0fabd179d7c429a1e68c2790190c5aacc",
+          "bytes": 640037
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_00/iter_32000.pt",
+          "sha256": "53c67c8222d5e7e222020d94431cb32ff6413b50b0f5e63df50547a7e509f2d1",
+          "bytes": 3155237
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_01/iter_32000.pt",
+          "sha256": "f31f417c41445233c8ca799cad8fa59170c13d8c06ab633442525765c8199e49",
+          "bytes": 89829
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_02/iter_32000.pt",
+          "sha256": "bb4aae2d5234cffa6c735b04a53ec0e43c74e0cfb437706d8f26c8d5edc0b67a",
+          "bytes": 162149
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_03/iter_32000.pt",
+          "sha256": "f39537344a121d48fe36b1db3dac87d051404370eee57f1eaa596581e4e41586",
+          "bytes": 460837
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_04/iter_32000.pt",
+          "sha256": "0926350316a2cc50a7dd83c987d5c573492f15010d5714a3e2c1a77ac02c1aee",
+          "bytes": 605477
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_05/iter_32000.pt",
+          "sha256": "187082d16877af4f3fd296ea9c57d6c08835553590724acda61f5175b20fb66c",
+          "bytes": 1023589
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_06/iter_32000.pt",
+          "sha256": "39d811c70944e259967271b0f633c16c50b694d92687d02d3571d45b84a81ebd",
+          "bytes": 1353701
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_07/iter_32000.pt",
+          "sha256": "671cefeb34fae61b3b3cb04257d86b3e11d70b3d558fb04c64d77b8e6b3243f0",
+          "bytes": 1058213
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_08/iter_32000.pt",
+          "sha256": "6141a8b065383be3683fa7a5451cc3f65c02fd1f66d0304af56ba4ee6728adf9",
+          "bytes": 102437
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_09/iter_32000.pt",
+          "sha256": "97ce3f97a0203b2147a51d1567d1edca63e4bc954a0c4a292b79fdbd856fdab9",
+          "bytes": 33253
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_10/iter_32000.pt",
+          "sha256": "c384a2e69105cec3c44e0b05fda7962976f75ba900abf33340fcde23c63cd0b1",
+          "bytes": 3114341
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_11/iter_32000.pt",
+          "sha256": "b6fbbc4232384837d25c745cf77632ac4ca9801b77de1adcd17244c8da55d093",
+          "bytes": 177893
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_12/iter_32000.pt",
+          "sha256": "e7c42d30edfe7187aadeb0206f7a525ee269ceadb9e3cc56f222c3c61390fea1",
+          "bytes": 3479077
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_13/iter_32000.pt",
+          "sha256": "d9f13003f19c6709310597e11272810e9581dbdd696dbf6964224a321a2412d1",
+          "bytes": 347621
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_14/iter_32000.pt",
+          "sha256": "ce38716cba612d8064080a15c923fdf44b082ae604a576df094dc7412e37df69",
+          "bytes": 3394149
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_15/iter_32000.pt",
+          "sha256": "52ae5ee090bb1bcde16970b2553f3d0f070cb46021e0a1d50f9c11ccef6ad1e2",
+          "bytes": 33253
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_16/iter_32000.pt",
+          "sha256": "730402d36820fd04a130e61a77be99321aa78467047e39bd01f8042492808891",
+          "bytes": 806693
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_17/iter_32000.pt",
+          "sha256": "71751ed1b899738703926082d6f4c09b1506a703968e636b98f432e90ab0faca",
+          "bytes": 1347429
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_18/iter_32000.pt",
+          "sha256": "a54d027eb208725c180c18f96158c5dbd2d90d25eb036609d54ccc364ddcf8f9",
+          "bytes": 177893
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_19/iter_32000.pt",
+          "sha256": "2e4a44ce7dc23f4b001cf710e5b85f834d3d438352ad8e7d0224d5a8c4d41f5e",
+          "bytes": 1048741
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_20/iter_32000.pt",
+          "sha256": "80625e6911ca8b403409db91657d8a117f213fe1385a68ef7e2898a5e0512b3b",
+          "bytes": 92965
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_21/iter_32000.pt",
+          "sha256": "8bfe9683b62c6002d941def4b9e48e3c45f5ce97f3f423f42c470aa8df1728fd",
+          "bytes": 1158821
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_22/iter_32000.pt",
+          "sha256": "2515ced27585730370bfafddd4d0c5f8ecc1ba8dfb9b45f99fb7896806788e39",
+          "bytes": 948133
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_23/iter_32000.pt",
+          "sha256": "b911a8d0be2aa6f4faf809b454aab750f7a5d95a1ec7f23e2b7a915d6ca52321",
+          "bytes": 2774821
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_24/iter_32000.pt",
+          "sha256": "b6814ff43b8d71db18abaae4904c5e744edf0626f62f287cd5d404c95f16cdc2",
+          "bytes": 894693
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_25/iter_32000.pt",
+          "sha256": "8b955ad0d1ddc6e70c7fa3014b4035affb35060617490d3e53f4dcc5911e1d24",
+          "bytes": 872677
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_26/iter_32000.pt",
+          "sha256": "3d3171b1b9dbcb5838b0cd07e787305d06cad7bc5117da8cda0c362e142f287f",
+          "bytes": 2891109
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_27/iter_32000.pt",
+          "sha256": "e2e49f9ae87979ac1b8639dec0ed20841499dfebd810596f9fcf8880f77c48b4",
+          "bytes": 630629
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_28/iter_32000.pt",
+          "sha256": "0a61ea843f4d524e1fa4c012ba5534dfb530d231b566c78ffd016e2f00f50e2d",
+          "bytes": 1039333
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_29/iter_32000.pt",
+          "sha256": "6a2a4add56b6c34deccd6d9e9e6114eb9972ec8437c8d7e546c3c2e62143cf39",
+          "bytes": 4180197
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_30/iter_32000.pt",
+          "sha256": "72121b206e7061769d43418d7b90ad4b1a1036f3226c97a73a33e6d289135291",
+          "bytes": 303653
+        },
+        {
+          "path": "proxies/fmnist/0p07/client_31/iter_32000.pt",
+          "sha256": "0714e24c0f04eb4aef5e1963ef02b9288cf9f3e869406b350b559464f3aeaa16",
+          "bytes": 26981
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_00/iter_32000.pt",
+          "sha256": "3b8da5547d9980cd519f133e33bf4e6ec57edfe2ad197d9a1fd6544678d0bb31",
+          "bytes": 1630373
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_01/iter_32000.pt",
+          "sha256": "58003cd6d8251d465844c60fdb43e492d0c7c92d56ed6313e93701982e008f04",
+          "bytes": 1168229
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_02/iter_32000.pt",
+          "sha256": "485fb1c14d6f9ae7775f1951f36773f93d65293cf5b66b018b54aedf39d65273",
+          "bytes": 822373
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_03/iter_32000.pt",
+          "sha256": "1e26e37da23e11f6bf492b1ac45a0e41acbf35c2b65965fab2f915835c0099b3",
+          "bytes": 621157
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_04/iter_32000.pt",
+          "sha256": "52ba7b2b8908868ea9bd8963280895bee7715a8149ff945ffcb9c1de89a11c1b",
+          "bytes": 853797
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_05/iter_32000.pt",
+          "sha256": "8235577ecf238f89672fd412a76e9ddcef48e28ab05efd4ce4e47257fefeaaac",
+          "bytes": 303653
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_06/iter_32000.pt",
+          "sha256": "8e997bc0d94731187095711aabdf3f11e76dedc0026d09a8dd6e8d18937e27c8",
+          "bytes": 1136805
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_07/iter_32000.pt",
+          "sha256": "61de87eadd2e2f569c113d547e080068ea7bf98933eb84800c84e662c0eb91ef",
+          "bytes": 580325
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_08/iter_32000.pt",
+          "sha256": "59d71caefee4d06eea30028e2999583b61ae94f6426a985ca6870a452e0f4935",
+          "bytes": 907301
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_09/iter_32000.pt",
+          "sha256": "6fa67d10f48147a745a08d22b554608dfad3e2142f1d0a4269ca0fc9a2348d52",
+          "bytes": 1894501
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_10/iter_32000.pt",
+          "sha256": "be342cf98ad501358b6c641d5c873e945740feb878c10ad99e2f62e25ec45719",
+          "bytes": 624293
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_11/iter_32000.pt",
+          "sha256": "bdfe7c86f80b0ed74c385942381d8790d72b8f35d2c231d56dec1bdd43ca6af1",
+          "bytes": 3372197
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_12/iter_32000.pt",
+          "sha256": "ae5054d34abb6a49419a8fbf22e5f6bdea70bb0ce0673f332cc913a988bb2a8e",
+          "bytes": 1045605
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_13/iter_32000.pt",
+          "sha256": "8576d27f5654821c243aa7c34b939949e14c0f7bba9025173c92ac0d7a117d85",
+          "bytes": 3447653
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_14/iter_32000.pt",
+          "sha256": "5377b2f58a516c9f1056470ce387040b8f362b4d63a13c6df20cd31c8a198951",
+          "bytes": 124389
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_15/iter_32000.pt",
+          "sha256": "57d90c58b95f3bb83eae8521e7b5dde17c76892ec327aa0235843174217efab8",
+          "bytes": 3479077
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_16/iter_32000.pt",
+          "sha256": "216fd982b8afde65196e050cc79482640d9e20ffc02aa28b900fdb4213f7721f",
+          "bytes": 548837
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_17/iter_32000.pt",
+          "sha256": "4c3035b4415d54d225791e0cda89d94cfc73a9fb1a8759aa5592b38e690bb0f3",
+          "bytes": 143269
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_18/iter_32000.pt",
+          "sha256": "dfec941e044275b6c3fe84c9aaa2234f8dc13c6da4527020c6e7a7a92fd179e4",
+          "bytes": 203045
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_19/iter_32000.pt",
+          "sha256": "789d1948b5a0bb23f8699d51cd06981797f9695d3403da59b1f107c8ae8435bd",
+          "bytes": 1149349
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_20/iter_32000.pt",
+          "sha256": "674239f77b38a4af10208c545e52433dc158adcd089e0a6ee020f83aae98c1e5",
+          "bytes": 1429157
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_21/iter_32000.pt",
+          "sha256": "6aec156614627307185733bbbdfbfb4c180149e1be68b1d63e5235454998650d",
+          "bytes": 608613
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_22/iter_32000.pt",
+          "sha256": "eeb2b011043e629020dcc5557b2907605b62acca5a241958c0a7e4abfb288c81",
+          "bytes": 287909
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_23/iter_32000.pt",
+          "sha256": "4a792eb9db95d466e2cae5b1efcdb25180068dc44cf4cbeb7fee86de5d21cf61",
+          "bytes": 300453
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_24/iter_32000.pt",
+          "sha256": "7b6d6d69b49828bde70764414df75c566d74e40001b7f0d8a2d43f361917cc42",
+          "bytes": 80421
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_25/iter_32000.pt",
+          "sha256": "ba44b9a31134a9c3ebb0f0c1b634fa493aa699b279f5592624c421bffb8cc5cd",
+          "bytes": 2592485
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_26/iter_32000.pt",
+          "sha256": "f3e6f862d741f4bc9af9f2be70cb8bf877bd9542ee5822032488898c325994b2",
+          "bytes": 3664549
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_27/iter_32000.pt",
+          "sha256": "1543bd79dfecea754459aae6d8ad15435c5c02bed2535bcca5cf1da8d7a06ccb",
+          "bytes": 2067429
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_28/iter_32000.pt",
+          "sha256": "0b3679607e6fe5351a254303a47bdd22f8fa4444c5154a362c5bd5bebd719cb1",
+          "bytes": 1064485
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_29/iter_32000.pt",
+          "sha256": "806b227bb7894278ee6722773f3a01c33f86aaf407fdf9ba7089430087c2d3a5",
+          "bytes": 979557
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_30/iter_32000.pt",
+          "sha256": "d645ed336f21b836f6eeb3c306166d2e748edec93c623d157fe467ec034b62ff",
+          "bytes": 501669
+        },
+        {
+          "path": "proxies/fmnist/0p1/client_31/iter_32000.pt",
+          "sha256": "aaaf8215521ff8e972dc7a487d3ed5de211550beba550514c1e21ce308a1eae2",
+          "bytes": 152741
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_00/iter_32000.pt",
+          "sha256": "60c761b2335877757cad606dbdc8469dbde5b0c914d11743b7e9eb7e13d53aa6",
+          "bytes": 517413
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_01/iter_32000.pt",
+          "sha256": "9ac61edba6cf26574feb22b4d928f91e64e34b2510a14e2e27c42ee265e4eea9",
+          "bytes": 366501
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_02/iter_32000.pt",
+          "sha256": "a7a56706748382f5f8db568146b8f1eabfeba01065d0e9289fbaf0ee530217bb",
+          "bytes": 2598757
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_03/iter_32000.pt",
+          "sha256": "f7f0b6d5b33f692f0d6b1812303bf4e58e76f480c902cde3b2c55def8a260cf6",
+          "bytes": 1259429
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_04/iter_32000.pt",
+          "sha256": "d8bf004f62b8e7f81c5becba0810a99fb87d6cd33755ebd059f5814bded29b9d",
+          "bytes": 753189
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_05/iter_32000.pt",
+          "sha256": "7d25050e4bebbd9fa7106b1ad19ddea96c894c0021e360d35e719ef409022b61",
+          "bytes": 2309477
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_06/iter_32000.pt",
+          "sha256": "bfd91344a7f33ce61a96492f8456a8381cc4f8890235a37ff1e6a12de277256a",
+          "bytes": 2057957
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_07/iter_32000.pt",
+          "sha256": "d3269bddb3c1664d190e8b2919f1d1bdb20f8c8f816e8451f7511261570cd9b8",
+          "bytes": 2821989
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_08/iter_32000.pt",
+          "sha256": "9baf3469acaf2967265f24af3cb1a9bed9a110d92eb8dd8b5306b5b1120d1879",
+          "bytes": 1309733
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_09/iter_32000.pt",
+          "sha256": "6ca73caa67898698ce519cfc810deb268eaf910eb2181ae3d029614c48754170",
+          "bytes": 1394597
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_10/iter_32000.pt",
+          "sha256": "8887a85a34522cb2d7a9899d3f88fddc2692ec3f670d5b03e5a6dfd488402bb0",
+          "bytes": 1869349
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_11/iter_32000.pt",
+          "sha256": "73b46d55839eee124fcedc6bbd7a4e42124cae8b605b0d3a0d05fe4ed8773dfd",
+          "bytes": 1256229
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_12/iter_32000.pt",
+          "sha256": "064c103a5063e16e7048d49947b4751389837c569aec4bc316411a180b5109a3",
+          "bytes": 1001573
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_13/iter_32000.pt",
+          "sha256": "4c457dfd5626855c7f9739dc80bbeac56c221f12743a700bd7541c8d936f4299",
+          "bytes": 633765
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_14/iter_32000.pt",
+          "sha256": "8ff34d4c330f8f8a7e6ab03faa1c30edaec6ffb3fec0f61c1ffef09bdf3ae7c0",
+          "bytes": 448229
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_15/iter_32000.pt",
+          "sha256": "0a53c3269d948604b38ee151fcf222a1cb34acbd162537b78483cb48d73db1bf",
+          "bytes": 580325
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_16/iter_32000.pt",
+          "sha256": "fbc92f7e58a167eff4546220b542c92a3a57be017c26f4b6da12235adf229451",
+          "bytes": 357093
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_17/iter_32000.pt",
+          "sha256": "8d1379ed85bbfdea7d7834540d712ca8419950b301af9de4acc5c0b92aba7638",
+          "bytes": 627429
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_18/iter_32000.pt",
+          "sha256": "826fd7f5401453cce3e3b0b143c21aa0ac67a8613e07e604f6315231ed1be6a8",
+          "bytes": 627429
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_19/iter_32000.pt",
+          "sha256": "575503ef29281e3170b8947ea1a67f5bb94a7949dae7de28b3ae4949c8b31c50",
+          "bytes": 360229
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_20/iter_32000.pt",
+          "sha256": "bb5abf3224e1c035534a7e2569ef8bb8906fc54c78a83b40b88a81d68a376711",
+          "bytes": 551973
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_21/iter_32000.pt",
+          "sha256": "902173b4c115db203750abe2d9d318e6d1fe998399f59fe37c5878c3cc0b4e3e",
+          "bytes": 1504613
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_22/iter_32000.pt",
+          "sha256": "2e4fff167b0b104c25cddf9d70e28b633b4fe00def865f10ee8e32313a1b78c0",
+          "bytes": 64677
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_23/iter_32000.pt",
+          "sha256": "303089f039aa25a41c8085ed012286679691237a853d3ccfb1103844ba70ffbf",
+          "bytes": 1580069
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_24/iter_32000.pt",
+          "sha256": "71ca1e0c870b9d2407a439dad9da46484dbc40202a83abb464896537eedc5d10",
+          "bytes": 897829
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_25/iter_32000.pt",
+          "sha256": "384694d76f65fb2d0ef560726abf71d7fbd26f0bb31976b71ba62c9c79142fdb",
+          "bytes": 2230885
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_26/iter_32000.pt",
+          "sha256": "d0edf637d11f1607f59179ec1d8ad3471c09d6947d017369a8f38e80e2d79a2a",
+          "bytes": 2325221
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_27/iter_32000.pt",
+          "sha256": "2f3a4dfa16f53986ef0f3f19ec2bca650cba44d81072fdba1fef75b48de18f8c",
+          "bytes": 605477
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_28/iter_32000.pt",
+          "sha256": "d681867c2d63398c68cd1ce8fd30512b3835a6fcbc0dc2dcb45eaf794a68e459",
+          "bytes": 2737061
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_29/iter_32000.pt",
+          "sha256": "00ac746a9e79db13e60d113d2228cc53c2f6629b4082a6ac2bbb217c94ea3195",
+          "bytes": 250149
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_30/iter_32000.pt",
+          "sha256": "0d1f943eb56eaedc01a820342ea8248019d1a1b60594c44be6d6b85a1874a0f6",
+          "bytes": 775205
+        },
+        {
+          "path": "proxies/fmnist/0p2/client_31/iter_32000.pt",
+          "sha256": "7c33c1b0dad7b66314698847bdcb7fa86e3aaf80f57611273a50f0bd72b591fd",
+          "bytes": 1111653
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_00/iter_32000.pt",
+          "sha256": "6518b7187aecc5368ef4274cc03e01e53c312ace72dcff7a2f14aa706f450aad",
+          "bytes": 463973
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_01/iter_32000.pt",
+          "sha256": "a1faf10b4d293664e69fa758b3898f365e4ded79449bbcac0cd9d3986330218f",
+          "bytes": 1504613
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_02/iter_32000.pt",
+          "sha256": "450259f55155783d20e7b34998fb1a900ec4f0cfbbfb12b807d7a3ea58b8cabd",
+          "bytes": 696613
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_03/iter_32000.pt",
+          "sha256": "da24cd599e35b56da69c495c7687d65bf838807881017ecacbcae2269cddd9be",
+          "bytes": 1033061
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_04/iter_32000.pt",
+          "sha256": "957864a3382c9b3cc02f36a239d67930118e4f4a8af4e8d969c272560ae5945c",
+          "bytes": 1749861
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_05/iter_32000.pt",
+          "sha256": "93f66e5bb2e85d4e1df74da637c87a2de61c5bdbc41480bedb86c37eb7238001",
+          "bytes": 844389
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_06/iter_32000.pt",
+          "sha256": "8aad27af5b88ca7e84d36d32671ba7dd3b5fde2c1983c9c4101d36269e1d7563",
+          "bytes": 2086245
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_07/iter_32000.pt",
+          "sha256": "7b076eefacff88127c0b849dd8358c0123582061e8ab9b3b208c84f4d60ea52f",
+          "bytes": 2941413
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_08/iter_32000.pt",
+          "sha256": "deabcdeeefa61ba662dcd29672446ab0f39bad99ec2ae5b2fc909b8be0646d55",
+          "bytes": 1127333
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_09/iter_32000.pt",
+          "sha256": "d8739ab56b281e0c3bb17d844cd204095ca93ec98d440e3efaf546f339827a43",
+          "bytes": 970149
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_10/iter_32000.pt",
+          "sha256": "cdd26b9d44a7c7ab54baf5fdc6fddb230f308a7a2aca3711e61a02b9436074f9",
+          "bytes": 1646117
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_11/iter_32000.pt",
+          "sha256": "2d215c1dd2b88e352d95b9bb06e7cff969dfada049b1c105fc6f93d7f84810a3",
+          "bytes": 1033061
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_12/iter_32000.pt",
+          "sha256": "7bb8c382ad6bbb6dea02c9f8ab9ea79fe993a9a69700b98c45b0d712e1c9ce4d",
+          "bytes": 1303397
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_13/iter_32000.pt",
+          "sha256": "ddc9ab9b2c01b59b1c787f58346a64ee7f1822cb4e9edd2535eb18f1775e12b6",
+          "bytes": 734373
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_14/iter_32000.pt",
+          "sha256": "e340f603a08d60341412b32292a097d666782fa0e1d89904fd72d537943ad06f",
+          "bytes": 1520357
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_15/iter_32000.pt",
+          "sha256": "41564ca26ebc9e5db12acd9d8708eb23c2d154b1fb0057e0d038a483da2365fa",
+          "bytes": 932453
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_16/iter_32000.pt",
+          "sha256": "8686a354daa8b39c460d6b77971eb378ee07985f913046b72c5f74552e45b797",
+          "bytes": 363365
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_17/iter_32000.pt",
+          "sha256": "e05c83a30189b1b8945479821fc33f15d001bc14e7282bc572a71e0147615837",
+          "bytes": 382245
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_18/iter_32000.pt",
+          "sha256": "b52d1a783a45a54a35fbe339f7f9b1c4256bb790544652db1fdd42be53890299",
+          "bytes": 875813
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_19/iter_32000.pt",
+          "sha256": "1265bfac19b3a12cff6a520181c7de5a85821a5719b1761e2e4f0ea6f7202f2d",
+          "bytes": 630629
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_20/iter_32000.pt",
+          "sha256": "94e4f9ac8157c0462ba4bb9275a7760036e2e9ded59d681a29f25932df33c51b",
+          "bytes": 891557
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_21/iter_32000.pt",
+          "sha256": "f59fee529d663e015c76bf102762b5c6ad685c8e2fb57ee8ccb6cd3292200171",
+          "bytes": 1061349
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_22/iter_32000.pt",
+          "sha256": "23d5710cb9cf44fb422c97b099c51e014507f01542e00c8989ba75931bf41059",
+          "bytes": 284773
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_23/iter_32000.pt",
+          "sha256": "93c60b157ad929d4c43893c585d19efa0a695bc5dde2f7223b9167dee709a9b1",
+          "bytes": 1507749
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_24/iter_32000.pt",
+          "sha256": "3b40d7a1cacf996715e975bffa9169a7e6f3ef49cc3fb2795031b8f6b91d229d",
+          "bytes": 728037
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_25/iter_32000.pt",
+          "sha256": "0bb14919eef6f63858ac6a783b599cfb1affd48549527f973e82a3dec00e59aa",
+          "bytes": 1353701
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_26/iter_32000.pt",
+          "sha256": "c27d2f72590ef19b604fe3af759af5d8bbb54f98f88ff3c2d8fee8cc59149ec6",
+          "bytes": 2120869
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_27/iter_32000.pt",
+          "sha256": "da53bf9c56ae9941a94936083136b6be14a5f81590952b894ff65198f13bd7f0",
+          "bytes": 1312869
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_28/iter_32000.pt",
+          "sha256": "53274206dda62fdae96e4790ae60b00aaaab9f5d2447613dae02bb96d2b4ba87",
+          "bytes": 1598949
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_29/iter_32000.pt",
+          "sha256": "1a4d4668708cb8f06c89511ca26948835fa495c1d7e8e2c8a9b09984fbe32fe7",
+          "bytes": 1121061
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_30/iter_32000.pt",
+          "sha256": "a9a4b4ed9bcff9be058ae13f3900c40eaac102640084c1bd1b505b50e5bac00c",
+          "bytes": 2513829
+        },
+        {
+          "path": "proxies/fmnist/0p3/client_31/iter_32000.pt",
+          "sha256": "fefa73fb3d66a1ac6d4f58ad8f102233be3f0cc5722de42324ec6929fccc9b71",
+          "bytes": 451365
+        },
+        {
+          "path": "metadata/fmnist/release_manifest.json",
+          "sha256": "f633a218e7476049ca4db8f94577e43943d1a55d324242581c4168292b4a94ca",
+          "bytes": 33343
+        }
+      ],
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_fmnist_32k_v1.tar.gz"
+    },
+    {
+      "name": "pjcs_initializations_v1.tar.gz",
+      "dataset": "initializations",
+      "sha256": "7cf2afd743a9a717971dab4093ae088f565354f8eb8d29fbf53b3a4c6a83de25",
+      "bytes": 9358485,
+      "manifest_path": "metadata/initializations/release_manifest.json",
+      "members": [
+        {
+          "path": "metadata/cifar10/initializations/seed_2027.pt",
+          "sha256": "9343d7c3a946cd7e0bbaae1122dea0053c9b920f6aa4762fb26ea76d3e44824a",
+          "bytes": 1285089
+        },
+        {
+          "path": "metadata/cifar10/initializations/seed_2028.pt",
+          "sha256": "d1162df87095299a4bfd5659d2a6c3e598324e10ad421de32fd4a66984fc3c24",
+          "bytes": 1285089
+        },
+        {
+          "path": "metadata/cifar10/initializations/seed_2029.pt",
+          "sha256": "5af161e61d6ae8361c32736c4728094ce8bdc821b58c2c88648a9395295067ba",
+          "bytes": 1285089
+        },
+        {
+          "path": "metadata/cifar10/initializations/seed_2030.pt",
+          "sha256": "7eaccac439f79e0714177f113c2e7f23be64efe9038fc04c25a27b4e0ce0a479",
+          "bytes": 1285089
+        },
+        {
+          "path": "metadata/fmnist/initializations/seed_2027.pt",
+          "sha256": "d54eaf4463eaacfb9eb5d211574a455b7a7c61fb547e63e27c0bc082876eeaa3",
+          "bytes": 1275873
+        },
+        {
+          "path": "metadata/fmnist/initializations/seed_2028.pt",
+          "sha256": "746f11a930e09bd125e1bde5cd0b05fdc7653f0cdaffa016df2370025b9b3bc7",
+          "bytes": 1275873
+        },
+        {
+          "path": "metadata/fmnist/initializations/seed_2029.pt",
+          "sha256": "aef1946d5f61647ee8e1bb240eed9019c7c661c2218dfabaa78a9aef7c401b20",
+          "bytes": 1275873
+        },
+        {
+          "path": "metadata/fmnist/initializations/seed_2030.pt",
+          "sha256": "c2671c68795b92bebd8af2e188f6c87e3febd91985c820075008c66fcac6682f",
+          "bytes": 1275873
+        },
+        {
+          "path": "metadata/initializations/DATA_LICENSE.txt",
+          "sha256": "f3363267c7a91dd3f0a33846b7434aea858ee19fdedeae0eb4752738547463f4",
+          "bytes": 3299
+        },
+        {
+          "path": "metadata/initializations/release_manifest.json",
+          "sha256": "f73667e449415f17ef02398e68b1c723bed4a30581217ceb472e0b3f9cf8bc9e",
+          "bytes": 4116
+        }
+      ],
+      "url": "https://github.com/wudi2071458152/PJCS-FL/releases/download/v1.0.0/pjcs_initializations_v1.tar.gz"
+    }
+  ]
+}

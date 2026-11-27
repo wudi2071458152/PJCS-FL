@@ -7,6 +7,7 @@ from pathlib import Path
 import subprocess
 import sys
 import time
+from package_results import package
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -82,6 +83,7 @@ def run(args, jobs):
                             continue
                         log.close(); del active[slot]
                         if code:
+                            label = '_'.join(str(job[k]) for k in ('dataset', 'alpha', 'seed', 'method'))
                             raise RuntimeError('Worker failed: ' + label + '; inspect the logs directory')
                         completed.append(job)
                     snapshot = dict(state='running', phase=phase, completed=len(completed), total=len(jobs),
@@ -91,8 +93,11 @@ def run(args, jobs):
                     temporary.replace(status)
                     if active:
                         time.sleep(1)
+                selected = [j for j in completed if j['phase'] == phase] if phase == 'first_seed' else jobs
+                package_name = 'first_seed_results.tar.gz' if phase == 'first_seed' else 'final_results.tar.gz'
+                packaged = package(output, selected, output / package_name)
                 (output / (phase + '_complete.json')).write_text(
-                    json.dumps(dict(completed=[j for j in completed if j['phase'] == phase]), indent=2) + '\n',
+                    json.dumps(dict(completed=[j for j in completed if j['phase'] == phase], package=packaged), indent=2) + '\n',
                     encoding='utf-8')
             except BaseException as exc:
                 status.write_text(json.dumps(dict(state='failed', phase=phase, completed=len(completed),
