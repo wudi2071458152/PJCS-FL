@@ -1,6 +1,6 @@
 # PJCS-FL
 
-Reproduction materials for **Joint Client Sampling with Reusable Synthetic Data for Non-IID Federated Learning**, by Di Wu.
+Reproduction materials for **Proxy-Guided Fixed-Marginal Joint Client Sampling for Non-IID Federated Learning**, by Di Wu.
 
 **Released:** [v1.0.0](https://github.com/wudi2071458152/PJCS-FL/releases/tag/v1.0.0). Source code, the CIFAR-10 and Fashion-MNIST proxy data, the initialization supplement and `SHA256SUMS` are public. All four attachment names, sizes and GitHub-reported SHA256 values match the prepared files. See [downloads and installation](docs/downloads.md).
 

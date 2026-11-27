@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the associated PJCS manuscript when using this software; publication metadata will be added when available."
 type: software
-title: "PJCS-FL: Joint Client Sampling with Reusable Synthetic Data"
+title: "Proxy-Guided Fixed-Marginal Joint Client Sampling for Non-IID Federated Learning"
 authors:
   - family-names: Wu
     given-names: Di
